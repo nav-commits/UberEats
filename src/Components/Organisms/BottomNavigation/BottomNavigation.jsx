@@ -1,5 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Home from '../../Screens/TabScreens/Home';
 import Account from '../../Screens/TabScreens/Account';
 import Browse from '../../Screens/TabScreens/Browse';
@@ -14,21 +15,21 @@ export default function BottomNavigation() {
                     let iconName;
                     switch (route.name) {
                         case 'Home':
-                            iconName = focused ? 'home' : 'home-outline';
+                            iconName = <Ionicons name={focused ? 'home' : 'home-outline'} size={size} color={color} />
                             break;
                         case 'Browse':
-                            iconName = focused ? 'checkmark-circle' : 'checkmark-circle-outline';
+                            iconName = <MaterialCommunityIcons name={focused ? 'file-search' : 'file-search-outline'} size={size} color={color} />
                             break;
                         case 'Carts':
-                            iconName = focused ? 'heart-circle' : 'heart-circle-outline';
+                            iconName = <Ionicons name={focused ? 'cart' : 'cart-outline'} size={size} color={color} />
                             break;
                         case 'Account':
-                            iconName = focused ? 'bandage' : 'bandage-outline';
+                            iconName = <Ionicons name={focused ? 'person' : 'person-outline'} size={size} color={color} />
                             break;
                         default:
                             break;
                     }
-                    return <Ionicons name={iconName} size={size} color={color} />;
+                    return iconName;
                 },
                 tabBarActiveTintColor: 'black',
                 tabBarInactiveTintColor: 'grey',
