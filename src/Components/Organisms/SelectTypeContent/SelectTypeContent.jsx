@@ -3,13 +3,7 @@ import React from 'react';
 import SelectType from '../../Atoms/SelectType/SelectType';
 export default function SelectTypeContent({ data }) {
     return (
-        <View
-            style={{
-                flexDirection: 'row',
-                flexWrap: 'wrap',
-                
-            }}
-        >
+        <View style={styles.parentWrapper}>
             {data.map((label, i) => (
                 <TouchableOpacity key={i}>
                     <SelectType
@@ -28,23 +22,8 @@ export default function SelectTypeContent({ data }) {
                                 />
                             </View>
                         }
-                        typeItem={
-                            <Text style={{ paddingLeft: 10, fontSize: 12, fontWeight: '500' }}>
-                                {label.label}
-                            </Text>
-                        }
-                        bottomText={
-                            <Text
-                                style={{
-                                    textAlign: 'center',
-                                    fontSize: 11,
-                                    paddingLeft: 15,
-                                    fontWeight: '500',
-                                }}
-                            >
-                                {label.labelBottom}
-                            </Text>
-                        }
+                        typeItem={<Text style={styles.typeItem}>{label.label}</Text>}
+                        bottomText={<Text style={styles.bottomText}>{label.labelBottom}</Text>}
                         width={label.width}
                     />
                 </TouchableOpacity>
@@ -53,4 +32,20 @@ export default function SelectTypeContent({ data }) {
     );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    bottomText: {
+        textAlign: 'center',
+        fontSize: 11,
+        paddingLeft: 15,
+        fontWeight: '500',
+    },
+    typeItem: {
+        paddingLeft: 10,
+        fontSize: 12,
+        fontWeight: '500',
+    },
+    parentWrapper: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+    },
+});

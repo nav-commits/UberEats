@@ -24,7 +24,7 @@ export default function SearchBar({ onChangeText, value, searchIcon, placeHolder
                     paddingLeft: 40,
                     borderRadius: 18,
                     color: 'black',
-                    minWidth: 320,
+                    minWidth: 350,
                     borderColor:'#F0F0F0',
                     backgroundColor: '#F0F0F0',
                 }}
