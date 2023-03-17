@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, StyleSheet } from 'react-native';
+import { View, Text, ScrollView, StyleSheet, StatusBar } from 'react-native';
 import React, { useState } from 'react';
 import SearchBar from '../../Atoms/SearchBar/SearchBar';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -8,6 +8,7 @@ import { selectLabels } from '../../../Utils/Labels';
 import SwitchToggle from '../../Atoms/SwitchToggle/SwitchToggle';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import RestaurantItemsContent from '../../Organisms/RestaurantsItemsContent/RestaurantItemsContent';
 export default function Home() {
     const [inputs, setInputs] = React.useState('');
     const [isOn, setIsOn] = useState(true);
@@ -23,6 +24,7 @@ export default function Home() {
                     showsVerticalScrollIndicator={false}
                     contentContainerStyle={styles.parentContainer}
                 >
+                    <StatusBar />
                     <View style={styles.textContainer}>
                         <View style={{ padding: 10 }}>
                             <Text style={styles.deliverAddress}>Deliver now</Text>
@@ -49,7 +51,6 @@ export default function Home() {
                         onChangeText={(newText) => setInputs(newText)}
                         value={inputs}
                         placeHolder='Food, groceries, drinks, etc'
-                        marginRight={10}
                         searchIcon={
                             <View
                                 style={{ position: 'relative', left: 40, elevation: 3, zIndex: 5 }}
@@ -77,12 +78,13 @@ export default function Home() {
                         }
                     />
                     <SelectTypeContent data={selectLabels} />
+                    <RestaurantItemsContent />
                 </ScrollView>
             ) : (
                 <View style={styles.textContainer}>
                     <View style={{ padding: 10 }}>
                         <Text style={styles.deliverAddress}>PickUp Now</Text>
-                        <Text style={styles.streetAddressStyle}>123 Oak Street</Text>
+                        <Text style={styles.streetAddressStyle}>Near 123 Oak Street</Text>
                     </View>
 
                     <SwitchToggle
@@ -107,8 +109,7 @@ export default function Home() {
 
 const styles = StyleSheet.create({
     parentContainer: {
-        paddingVertical: 20,
-        backgroundColor: 'white',
+
     },
     deliverAddress: {
         fontSize: 12,
@@ -133,7 +134,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         gap: 180,
-        paddingVertical: 20,
         backgroundColor: 'white',
     },
 });

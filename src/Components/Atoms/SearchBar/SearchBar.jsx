@@ -1,6 +1,6 @@
 import { View, TextInput } from 'react-native';
 import React from 'react';
-export default function SearchBar({ onChangeText, value, searchIcon, placeHolder, marginRight, filterIcon, dividerVerticalLine }) {
+export default function SearchBar({ onChangeText, value, searchIcon, placeHolder, filterIcon, dividerVerticalLine }) {
     return (
         <View
             style={{
@@ -8,7 +8,7 @@ export default function SearchBar({ onChangeText, value, searchIcon, placeHolder
                 flexDirection: 'row',
                 justifyContent: 'center',
                 alignItems: 'center',
-                marginRight: marginRight,
+                backgroundColor:'white'
             }}
         >
             {searchIcon}

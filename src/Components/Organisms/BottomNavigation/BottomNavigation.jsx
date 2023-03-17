@@ -4,7 +4,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Home from '../../Screens/TabScreens/Home';
 import Account from '../../Screens/TabScreens/Account';
 import Browse from '../../Screens/TabScreens/Browse';
-import Carts from '../../Screens/TabScreens/Carts';
+import Baskets from '../../Screens/TabScreens/Baskets';
 
 const Tab = createBottomTabNavigator();
 export default function BottomNavigation() {
@@ -20,7 +20,7 @@ export default function BottomNavigation() {
                         case 'Browse':
                             iconName = <MaterialCommunityIcons name={focused ? 'file-search' : 'file-search-outline'} size={size} color={color} />
                             break;
-                        case 'Carts':
+                        case 'Baskets':
                             iconName = <Ionicons name={focused ? 'cart' : 'cart-outline'} size={size} color={color} />
                             break;
                         case 'Account':
@@ -37,7 +37,7 @@ export default function BottomNavigation() {
         >
             <Tab.Screen name='Home' options={{ headerShown: false }} component={Home} />
             <Tab.Screen name='Browse' options={{ headerShown: false }} component={Browse} />
-            <Tab.Screen options={{ headerShown: false }} name='Carts' component={Carts} />
+            <Tab.Screen options={{ headerShown: false }} name='Baskets' component={Baskets} />
             <Tab.Screen options={{ headerShown: false }} name='Account' component={Account} />
         </Tab.Navigator>
     );

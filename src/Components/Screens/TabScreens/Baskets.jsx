@@ -4,7 +4,7 @@ import { View } from 'react-native';
 
 
 
-export default function Carts() {
+export default function Baskets() {
     return (
         <View style={styles.scene}>
            <Text>Carts</Text>

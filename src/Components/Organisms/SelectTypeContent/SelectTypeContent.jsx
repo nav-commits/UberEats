@@ -13,7 +13,7 @@ export default function SelectTypeContent({ data }) {
                                     display: 'flex',
                                     flexDirection: 'row',
                                     justifyContent: label.justifyContent,
-                                    marginTop: 10,
+
                                 }}
                             >
                                 <Image
@@ -47,5 +47,8 @@ const styles = StyleSheet.create({
     parentWrapper: {
         flexDirection: 'row',
         flexWrap: 'wrap',
+        backgroundColor: 'white',
+        paddingBottom: 20,
+        paddingTop: 8
     },
 });

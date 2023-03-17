@@ -1,0 +1,70 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "img": "https://tb-static.uber.com/prod/image-proc/processed_images/82b8e3c661cfd7efc2ceb33005143018/c73ecc27d2a9eaa735b1ee95304ba588.jpeg",
+            "name": "Dollarma",
+            "location": "McLaughlin Corners",
+            "deliveryDetails": {
+                "deliveryCost": 3.49,
+                "time": "25-45 min"
+            },
+            "rating": 4.5
+        },
+        {
+            "id": 2,
+            "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2023/01/20230112130156-257cb22a419b6c13351024c9b0df74d0501534f05a9c91676f5fa45edc654e48.jpg",
+            "name": "LCBO",
+            "location": "Sanadalwood Parkway",
+            "deliveryDetails": {
+                "deliveryCost": 5.49,
+                "time": "20-40 min"
+            },
+            "rating": 4.9
+        },
+        {
+            "id": 3,
+            "img": "https://cdn.cookielaw.org/logos/7d120555-065a-4ef8-b127-16aa186c5df2/25930e81-3e30-4ce5-a6e4-a7e34e2e1279/Subway_Logotype_yel-grn_rgb_300.png",
+            "name": "Subway",
+            "location": "6970 Lisgar dr",
+            "deliveryDetails": {
+                "deliveryCost": 9.99,
+                "time": "50-65 min"
+            },
+            "rating": 4.7
+        },
+        {
+            "id": 4,
+            "img": "https://i.insider.com/62212e77d72a250019740059?width=700",
+            "name": "McDonald's",
+            "location": "Fletchers Creek",
+            "deliveryDetails": {
+                "deliveryCost": 1.99,
+                "time": "10-25 min"
+            },
+            "rating": 4.4
+        },
+        {
+            "id": 5,
+            "img": "https://upload.wikimedia.org/wikipedia/en/1/16/Food_Basics_Logo.png",
+            "name": "Food Basics",
+            "location": "235 Guelph St",
+            "deliveryDetails": {
+                "deliveryCost": 10.99,
+                "time": "50-70 min"
+            },
+            "rating": 4.4
+        },
+        {
+            "id": 6,
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Dairy_Queen_logo.svg/800px-Dairy_Queen_logo.svg.png",
+            "name": "Dairy Queen",
+            "location": "1067 Chingaucousy Rd",
+            "deliveryDetails": {
+                "deliveryCost": 1.99,
+                "time": "10-20 min"
+            },
+            "rating": 4.4
+        }
+    ]
+}
