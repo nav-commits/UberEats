@@ -5,26 +5,14 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-export default function SwitchToggle({ isOn, toggleSwitch }) {
+export default function SwitchToggle({ isOn, toggleSwitch, icons }) {
     return (
         <View style={styles.container}>
-            <View style={styles.iconContainer}>
-                {isOn ? (
-                    <Feather name='shopping-bag' size={13} color='black' />
-                ) : (
-                    <Entypo name='shopping-bag' size={13} color='white' />
-                )}
-                {isOn ? (
-                    <FontAwesome5 name='walking' size={13} color='white' />
-                ) : (
-                    <FontAwesome5 name='walking' size={13} color='black' />
-                )}
-            </View>
-
+            {icons}
             <TouchableOpacity
                 style={[
                     styles.outter,
-                    isOn ? { justifyContent: 'flex-end' } : { justifyContent: 'flex-start' },
+                    isOn ? { justifyContent: 'flex-start' } : { justifyContent: 'flex-end' },
                 ]}
                 activeOpacity={1}
                 onPress={toggleSwitch}
@@ -63,14 +51,5 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-    },
-    iconContainer: {
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        gap: 20,
-        position: 'relative',
-        top: 20,
-        zIndex: 20,
     },
 });

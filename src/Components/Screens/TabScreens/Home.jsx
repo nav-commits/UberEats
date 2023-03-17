@@ -6,7 +6,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import SelectTypeContent from '../../Organisms/SelectTypeContent/SelectTypeContent';
 import { selectLabels } from '../../../Utils/Labels';
 import SwitchToggle from '../../Atoms/SwitchToggle/SwitchToggle';
-
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 export default function Home() {
     const [inputs, setInputs] = React.useState('');
     const [isOn, setIsOn] = useState(true);
@@ -18,42 +19,30 @@ export default function Home() {
     return (
         <View>
             {isOn ? (
-                <View
-                    style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        justifyContent: 'space-around',
-                        gap: 180,
-                        paddingVertical: 20,
-                        backgroundColor: 'white',
-                    }}
-                >
-                    <View style={{ padding: 10 }}>
-                        <Text style={styles.deliverAddress}>PickUp Now</Text>
-                        <Text style={styles.streetAddressStyle}>123 Oak Street</Text>
-                    </View>
-
-                    <SwitchToggle isOn={isOn} toggleSwitch={toggleSwitch} />
-                </View>
-            ) : (
                 <ScrollView
                     showsVerticalScrollIndicator={false}
                     contentContainerStyle={styles.parentContainer}
                 >
-                    <View
-                        style={{
-                            display: 'flex',
-                            flexDirection: 'row',
-                            justifyContent: 'space-around',
-                            gap: 180,
-                        }}
-                    >
+                    <View style={styles.textContainer}>
                         <View style={{ padding: 10 }}>
                             <Text style={styles.deliverAddress}>Deliver now</Text>
                             <Text style={styles.streetAddressStyle}>123 Oak Street</Text>
                         </View>
 
-                        <SwitchToggle isOn={isOn} toggleSwitch={toggleSwitch} />
+                        <SwitchToggle
+                            isOn={isOn}
+                            toggleSwitch={toggleSwitch}
+                            icons={
+                                <View style={styles.iconContainer}>
+                                    <MaterialCommunityIcons
+                                        name={isOn ? 'shopping' : 'shopping-outline'}
+                                        size={13}
+                                        color={isOn ? 'white' : 'black'}
+                                    />
+                                    <FontAwesome5 name='walking' size={13} color={isOn ? 'black' : 'white'} />
+                                </View>
+                            }
+                        />
                     </View>
 
                     <SearchBar
@@ -89,6 +78,28 @@ export default function Home() {
                     />
                     <SelectTypeContent data={selectLabels} />
                 </ScrollView>
+            ) : (
+                <View style={styles.textContainer}>
+                    <View style={{ padding: 10 }}>
+                        <Text style={styles.deliverAddress}>PickUp Now</Text>
+                        <Text style={styles.streetAddressStyle}>123 Oak Street</Text>
+                    </View>
+
+                    <SwitchToggle
+                        isOn={isOn}
+                        toggleSwitch={toggleSwitch}
+                        icons={
+                            <View style={styles.iconContainer}>
+                                <MaterialCommunityIcons
+                                    name={isOn ? 'shopping' : 'shopping-outline'}
+                                    size={13}
+                                    color={isOn ? 'white' : 'black'}
+                                />
+                                <FontAwesome5 name='walking' size={13} color={isOn ? 'black' : 'white'} />
+                            </View>
+                        }
+                    />
+                </View>
             )}
         </View>
     );
@@ -107,5 +118,22 @@ const styles = StyleSheet.create({
         fontSize: 12,
         color: 'black',
         fontWeight: 'bold',
+    },
+    iconContainer: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        gap: 20,
+        position: 'relative',
+        top: 20,
+        zIndex: 20,
+    },
+    textContainer: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        gap: 180,
+        paddingVertical: 20,
+        backgroundColor: 'white',
     },
 });
