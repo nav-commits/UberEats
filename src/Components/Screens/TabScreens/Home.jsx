@@ -10,6 +10,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import RestaurantItemsContent from '../../Organisms/RestaurantsItemsContent/RestaurantItemsContent';
 import { data } from '../../../Data/Restaurants.json';
+
 export default function Home() {
     const [inputs, setInputs] = React.useState('');
     const [isOn, setIsOn] = useState(true);
