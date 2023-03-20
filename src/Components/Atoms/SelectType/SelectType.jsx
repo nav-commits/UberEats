@@ -1,12 +1,12 @@
-import { View, StyleSheet,Text} from 'react-native';
+import { View, TouchableOpacity} from 'react-native';
 import React from 'react';
-export default function SelectType({ typeItem, Image, bottomText, width }) {
+export default function SelectType({ typeItem, Image, bottomText, width, backgroundColor }) {
     return (
-        <View>
+        <TouchableOpacity>
             <View
                 style={{
                     padding: 3,
-                    backgroundColor: '#F0F0F0',
+                    backgroundColor: backgroundColor,
                     width: width,
                     borderRadius: 10,
                     marginLeft: 20
@@ -16,9 +16,6 @@ export default function SelectType({ typeItem, Image, bottomText, width }) {
                 {typeItem}
             </View>
             {bottomText}
-        </View>
-        
+        </TouchableOpacity>
     );
 }
-
-const styles = StyleSheet.create({});

@@ -1,11 +1,11 @@
-import { View, StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Text, Image} from 'react-native';
 import React from 'react';
 import SelectType from '../../Atoms/SelectType/SelectType';
 export default function SelectTypeContent({ data }) {
     return (
         <View style={styles.parentWrapper}>
             {data.map((label, i) => (
-                <TouchableOpacity key={i}>
+                <View key={i}>
                     <SelectType
                         Image={
                             <View
@@ -25,8 +25,9 @@ export default function SelectTypeContent({ data }) {
                         typeItem={<Text style={styles.typeItem}>{label.label}</Text>}
                         bottomText={<Text style={styles.bottomText}>{label.labelBottom}</Text>}
                         width={label.width}
+                        backgroundColor={'#F0F0F0'}
                     />
-                </TouchableOpacity>
+                </View>
             ))}
         </View>
     );
