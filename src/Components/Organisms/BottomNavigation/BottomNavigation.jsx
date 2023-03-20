@@ -1,9 +1,10 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Home from '../../Screens/TabScreens/Home';
 import Account from '../../Screens/TabScreens/Account';
 import Browse from '../../Screens/TabScreens/Browse';
-import Carts from '../../Screens/TabScreens/Carts';
+import Baskets from '../../Screens/TabScreens/Baskets';
 
 const Tab = createBottomTabNavigator();
 export default function BottomNavigation() {
@@ -14,21 +15,21 @@ export default function BottomNavigation() {
                     let iconName;
                     switch (route.name) {
                         case 'Home':
-                            iconName = focused ? 'home' : 'home-outline';
+                            iconName = <Ionicons name={focused ? 'home' : 'home-outline'} size={size} color={color} />
                             break;
                         case 'Browse':
-                            iconName = focused ? 'checkmark-circle' : 'checkmark-circle-outline';
+                            iconName = <MaterialCommunityIcons name={focused ? 'file-search' : 'file-search-outline'} size={size} color={color} />
                             break;
-                        case 'Carts':
-                            iconName = focused ? 'heart-circle' : 'heart-circle-outline';
+                        case 'Baskets':
+                            iconName = <Ionicons name={focused ? 'cart' : 'cart-outline'} size={size} color={color} />
                             break;
                         case 'Account':
-                            iconName = focused ? 'bandage' : 'bandage-outline';
+                            iconName = <Ionicons name={focused ? 'person' : 'person-outline'} size={size} color={color} />
                             break;
                         default:
                             break;
                     }
-                    return <Ionicons name={iconName} size={size} color={color} />;
+                    return iconName;
                 },
                 tabBarActiveTintColor: 'black',
                 tabBarInactiveTintColor: 'grey',
@@ -36,7 +37,7 @@ export default function BottomNavigation() {
         >
             <Tab.Screen name='Home' options={{ headerShown: false }} component={Home} />
             <Tab.Screen name='Browse' options={{ headerShown: false }} component={Browse} />
-            <Tab.Screen options={{ headerShown: false }} name='Carts' component={Carts} />
+            <Tab.Screen options={{ headerShown: false }} name='Baskets' component={Baskets} />
             <Tab.Screen options={{ headerShown: false }} name='Account' component={Account} />
         </Tab.Navigator>
     );

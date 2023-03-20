@@ -1,0 +1,82 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "img": "https://tb-static.uber.com/prod/image-proc/processed_images/82b8e3c661cfd7efc2ceb33005143018/c73ecc27d2a9eaa735b1ee95304ba588.jpeg",
+            "name": "Dollarma",
+            "location": "McLaughlin Corners",
+            "deliveryDetails": {
+                "deliveryCost": 3.49,
+                "deliveryFee": "Delivery Fee",
+                "time": "25-45 min"
+            },
+            "rating": 4.5,
+            "Selected": false
+        },
+        {
+            "id": 2,
+            "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2023/01/20230112130156-257cb22a419b6c13351024c9b0df74d0501534f05a9c91676f5fa45edc654e48.jpg",
+            "name": "LCBO",
+            "location": "Sanadalwood Parkway",
+            "deliveryDetails": {
+                "deliveryCost": 5.49,
+                "deliveryFee": "Delivery Fee",
+                "time": "20-40 min"
+            },
+            "rating": 4.9,
+             "Selected": false
+        },
+        {
+            "id": 3,
+            "img": "https://cdn.britannica.com/08/193908-050-66767D57/view-Subway-restaurant-Bangkok-Thailand.jpg",
+            "name": "Subway",
+            "location": "6970 Lisgar dr",
+            "deliveryDetails": {
+                "deliveryCost": 9.99,
+                "deliveryFee": "Delivery Fee",
+                "time": "50-65 min"
+            },
+            "rating": 4.7,
+            "Selected": false
+        },
+        {
+            "id": 4,
+            "img": "https://i.insider.com/62212e77d72a250019740059?width=700",
+            "name": "McDonald's",
+            "location": "Fletchers Creek",
+            "deliveryDetails": {
+                "deliveryCost": 1.99,
+                "deliveryFee": "Delivery Fee",
+                "time": "10-25 min"
+            },
+            "rating": 4.4,
+            "Selected": false
+        },
+        {
+            "id": 5,
+            "img": "https://upload.wikimedia.org/wikipedia/en/1/16/Food_Basics_Logo.png",
+            "name": "Food Basics",
+            "location": "235 Guelph St",
+            "deliveryDetails": {
+                "deliveryCost": 10.99,
+                "deliveryFee": "Delivery Fee",
+                "time": "50-70 min"
+            },
+            "rating": 4.4,
+            "Selected": false
+        },
+        {
+            "id": 6,
+            "img": "https://takeoutnortheastbc.com/wp-content/uploads/2021/04/dairy-queen-food-blizzard-2018-1542822206.jpg",
+            "name": "Dairy Queen",
+            "location": "Chingaucousy Rd",
+            "deliveryDetails": {
+                "deliveryCost": 1.99,
+                "deliveryFee": "Delivery Fee",
+                "time": "10-20 min"
+            },
+            "rating": 4.4,
+            "Selected": false
+        }
+    ]
+}

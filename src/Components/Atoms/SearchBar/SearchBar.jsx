@@ -1,6 +1,6 @@
-import { View, Text, ScrollView, StyleSheet, TextInput } from 'react-native';
+import { View, TextInput } from 'react-native';
 import React from 'react';
-export default function SearchBar({ onChangeText, value, icon, placeHolder, marginRight }) {
+export default function SearchBar({ onChangeText, value, searchIcon, placeHolder, filterIcon, dividerVerticalLine }) {
     return (
         <View
             style={{
@@ -8,10 +8,10 @@ export default function SearchBar({ onChangeText, value, icon, placeHolder, marg
                 flexDirection: 'row',
                 justifyContent: 'center',
                 alignItems: 'center',
-                marginRight: marginRight,
+                backgroundColor:'white'
             }}
         >
-            {icon}
+            {searchIcon}
             <TextInput
                 onChangeText={onChangeText}
                 value={value}
@@ -21,16 +21,16 @@ export default function SearchBar({ onChangeText, value, icon, placeHolder, marg
                     height: 40,
                     margin: 12,
                     borderWidth: 1,
-                    paddingLeft: 30,
+                    paddingLeft: 40,
                     borderRadius: 18,
                     color: 'black',
-                    minWidth: 320,
+                    minWidth: 350,
                     borderColor:'#F0F0F0',
                     backgroundColor: '#F0F0F0',
                 }}
             />
+            {dividerVerticalLine}
+            {filterIcon}
         </View>
     );
 }
-
-const styles = StyleSheet.create({});
