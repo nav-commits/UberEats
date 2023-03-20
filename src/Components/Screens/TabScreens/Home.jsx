@@ -9,21 +9,23 @@ import SwitchToggle from '../../Atoms/SwitchToggle/SwitchToggle';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import RestaurantItemsContent from '../../Organisms/RestaurantsItemsContent/RestaurantItemsContent';
+import { data } from '../../../Data/Restaurants.json';
 export default function Home() {
     const [inputs, setInputs] = React.useState('');
     const [isOn, setIsOn] = useState(true);
+    const [isActive, setActive] = useState(false);
 
     const toggleSwitch = () => {
         setIsOn((isOn) => !isOn);
     };
 
+    const toggleActive = () => {
+        setActive((isActive) => !isActive);
+    };
     return (
         <View>
             {isOn ? (
-                <ScrollView
-                    showsVerticalScrollIndicator={false}
-                    contentContainerStyle={styles.parentContainer}
-                >
+                <View style={{ marginBottom: 95 }}>
                     <StatusBar />
                     <View style={styles.textContainer}>
                         <View style={{ padding: 10 }}>
@@ -41,45 +43,44 @@ export default function Home() {
                                         size={13}
                                         color={isOn ? 'white' : 'black'}
                                     />
-                                    <FontAwesome5 name='walking' size={13} color={isOn ? 'black' : 'white'} />
+                                    <FontAwesome5
+                                        name='walking'
+                                        size={13}
+                                        color={isOn ? 'black' : 'white'}
+                                    />
                                 </View>
                             }
                         />
                     </View>
-
-                    <SearchBar
-                        onChangeText={(newText) => setInputs(newText)}
-                        value={inputs}
-                        placeHolder='Food, groceries, drinks, etc'
-                        searchIcon={
-                            <View
-                                style={{ position: 'relative', left: 40, elevation: 3, zIndex: 5 }}
-                            >
-                                <FontAwesome name='search' size={16} color='hsl(240, 25%, 25%)' />
-                            </View>
-                        }
-                        filterIcon={
-                            <View
-                                style={{ position: 'relative', right: 45, elevation: 3, zIndex: 5 }}
-                            >
-                                <Ionicons name='filter' size={16} color='black' />
-                            </View>
-                        }
-                        dividerVerticalLine={
-                            <View
-                                style={{
-                                    position: 'relative',
-                                    borderColor: 'grey',
-                                    right: 55,
-                                    height: 30,
-                                    borderLeftWidth: 1,
-                                }}
-                            />
-                        }
-                    />
-                    <SelectTypeContent data={selectLabels} />
-                    <RestaurantItemsContent />
-                </ScrollView>
+                    <ScrollView showsVerticalScrollIndicator={false}>
+                        <SearchBar
+                            onChangeText={(newText) => setInputs(newText)}
+                            value={inputs}
+                            placeHolder='Food, groceries, drinks, etc'
+                            searchIcon={
+                                <View style={styles.searchIconStyling}>
+                                    <FontAwesome
+                                        name='search'
+                                        size={16}
+                                        color='hsl(240, 25%, 25%)'
+                                    />
+                                </View>
+                            }
+                            filterIcon={
+                                <View style={styles.filterIconStyling}>
+                                    <Ionicons name='filter' size={16} color='black' />
+                                </View>
+                            }
+                            dividerVerticalLine={<View style={styles.dividerVerticalLineStyling} />}
+                        />
+                        <SelectTypeContent data={selectLabels} />
+                        <RestaurantItemsContent
+                            data={data}
+                            toggleSwitch={toggleActive}
+                            isActive={isActive}
+                        />
+                    </ScrollView>
+                </View>
             ) : (
                 <View style={styles.textContainer}>
                     <View style={{ padding: 10 }}>
@@ -97,7 +98,11 @@ export default function Home() {
                                     size={13}
                                     color={isOn ? 'white' : 'black'}
                                 />
-                                <FontAwesome5 name='walking' size={13} color={isOn ? 'black' : 'white'} />
+                                <FontAwesome5
+                                    name='walking'
+                                    size={13}
+                                    color={isOn ? 'black' : 'white'}
+                                />
                             </View>
                         }
                     />
@@ -108,9 +113,6 @@ export default function Home() {
 }
 
 const styles = StyleSheet.create({
-    parentContainer: {
-
-    },
     deliverAddress: {
         fontSize: 12,
         color: 'grey',
@@ -135,5 +137,24 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         gap: 180,
         backgroundColor: 'white',
+    },
+    searchIconStyling: {
+        position: 'relative',
+        left: 40,
+        elevation: 3,
+        zIndex: 5,
+    },
+    filterIconStyling: {
+        position: 'relative',
+        right: 45,
+        elevation: 3,
+        zIndex: 5,
+    },
+    dividerVerticalLineStyling: {
+        position: 'relative',
+        borderColor: 'grey',
+        right: 55,
+        height: 30,
+        borderLeftWidth: 1,
     },
 });

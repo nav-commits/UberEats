@@ -7,6 +7,7 @@
             "location": "McLaughlin Corners",
             "deliveryDetails": {
                 "deliveryCost": 3.49,
+                "deliveryFee": "Delivery Fee",
                 "time": "25-45 min"
             },
             "rating": 4.5
@@ -18,17 +19,19 @@
             "location": "Sanadalwood Parkway",
             "deliveryDetails": {
                 "deliveryCost": 5.49,
+                "deliveryFee": "Delivery Fee",
                 "time": "20-40 min"
             },
             "rating": 4.9
         },
         {
             "id": 3,
-            "img": "https://cdn.cookielaw.org/logos/7d120555-065a-4ef8-b127-16aa186c5df2/25930e81-3e30-4ce5-a6e4-a7e34e2e1279/Subway_Logotype_yel-grn_rgb_300.png",
+            "img": "https://cdn.britannica.com/08/193908-050-66767D57/view-Subway-restaurant-Bangkok-Thailand.jpg",
             "name": "Subway",
             "location": "6970 Lisgar dr",
             "deliveryDetails": {
                 "deliveryCost": 9.99,
+                "deliveryFee": "Delivery Fee",
                 "time": "50-65 min"
             },
             "rating": 4.7
@@ -40,6 +43,7 @@
             "location": "Fletchers Creek",
             "deliveryDetails": {
                 "deliveryCost": 1.99,
+                "deliveryFee": "Delivery Fee",
                 "time": "10-25 min"
             },
             "rating": 4.4
@@ -51,17 +55,19 @@
             "location": "235 Guelph St",
             "deliveryDetails": {
                 "deliveryCost": 10.99,
+                "deliveryFee": "Delivery Fee",
                 "time": "50-70 min"
             },
             "rating": 4.4
         },
         {
             "id": 6,
-            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Dairy_Queen_logo.svg/800px-Dairy_Queen_logo.svg.png",
+            "img": "https://takeoutnortheastbc.com/wp-content/uploads/2021/04/dairy-queen-food-blizzard-2018-1542822206.jpg",
             "name": "Dairy Queen",
-            "location": "1067 Chingaucousy Rd",
+            "location": "Chingaucousy Rd",
             "deliveryDetails": {
                 "deliveryCost": 1.99,
+                "deliveryFee": "Delivery Fee",
                 "time": "10-20 min"
             },
             "rating": 4.4
