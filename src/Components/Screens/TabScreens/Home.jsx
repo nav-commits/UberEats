@@ -13,14 +13,21 @@ import { data } from '../../../Data/Restaurants.json';
 export default function Home() {
     const [inputs, setInputs] = React.useState('');
     const [isOn, setIsOn] = useState(true);
-    const [isActive, setActive] = useState(false);
+    const [select, setSelect] = useState(data);
 
     const toggleSwitch = () => {
         setIsOn((isOn) => !isOn);
     };
 
-    const toggleActive = () => {
-        setActive((isActive) => !isActive);
+    const toggleActive = (item) => {
+        const selectedItem = select.map((val) => {
+            if (val.id === item.id) {
+                return { ...val, Selected: !val.Selected };
+            } else {
+                return val;
+            }
+        });
+        setSelect(selectedItem);
     };
     return (
         <View>
@@ -74,11 +81,7 @@ export default function Home() {
                             dividerVerticalLine={<View style={styles.dividerVerticalLineStyling} />}
                         />
                         <SelectTypeContent data={selectLabels} />
-                        <RestaurantItemsContent
-                            data={data}
-                            toggleSwitch={toggleActive}
-                            isActive={isActive}
-                        />
+                        <RestaurantItemsContent data={select} toggleSwitch={toggleActive} />
                     </ScrollView>
                 </View>
             ) : (

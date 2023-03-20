@@ -3,7 +3,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import React from 'react';
 export default function RestaurantItem({
     img,
-    isActive,
+    selectedItem,
     name,
     location,
     deliveryCost,
@@ -11,6 +11,7 @@ export default function RestaurantItem({
     time,
     rating,
     toggleSwitch,
+    item
 }) {
     return (
         <TouchableOpacity>
@@ -22,10 +23,10 @@ export default function RestaurantItem({
             />
             <TouchableOpacity
                 style={{ position: 'absolute', right: 20, top: 20 }}
-                onPress={toggleSwitch}
+                onPress={() => toggleSwitch(item)}
             >
                 <MaterialCommunityIcons
-                    name={isActive ? 'cards-heart' : 'cards-heart-outline'}
+                    name={selectedItem ? 'cards-heart' : 'cards-heart-outline'}
                     size={20}
                     color='white'
                 />
