@@ -11,7 +11,93 @@
                 "time": "25-45 min"
             },
             "rating": 4.5,
-            "Selected": false
+            "Selected": false,
+            "productDetails": {
+                "productTitleOne": "Grocery",
+                "ProductsOne": [
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Alexander Keith's India",
+                        "price": 17.5
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    }
+                ],
+                "productTitleTwo": "Candles",
+                "ProductsTwo": [
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    }
+                ],
+                "productTitleThree": "Kitchen products",
+                "ProductsThree": [
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    }
+                ]
+            }
         },
         {
             "id": 2,
@@ -24,7 +110,93 @@
                 "time": "20-40 min"
             },
             "rating": 4.9,
-             "Selected": false
+            "Selected": false,
+            "productDetails": {
+                "productTitleOne": "Beer & Cider",
+                "ProductsOne": [
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Alexander Keith's India",
+                        "price": 17.5
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    }
+                ],
+                "productTitleTwo": "Ready To Drink",
+                "ProductsTwo": [
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    }
+                ],
+                "productTitleThree": "Spirits",
+                "ProductsThree": [
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    }
+                ]
+            }
         },
         {
             "id": 3,
@@ -37,7 +209,93 @@
                 "time": "50-65 min"
             },
             "rating": 4.7,
-            "Selected": false
+            "Selected": false,
+            "productDetails": {
+                "productTitleOne": "Beer & Cider",
+                "ProductsOne": [
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Alexander Keith's India",
+                        "price": 17.5
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    }
+                ],
+                "productTitleTwo": "Ready To Drink",
+                "ProductsTwo": [
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    }
+                ],
+                "productTitleThree": "Spirits",
+                "ProductsThree": [
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    }
+                ]
+            }
         },
         {
             "id": 4,
@@ -50,7 +308,93 @@
                 "time": "10-25 min"
             },
             "rating": 4.4,
-            "Selected": false
+            "Selected": false,
+            "productDetails": {
+                "productTitleOne": "Beer & Cider",
+                "ProductsOne": [
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Alexander Keith's India",
+                        "price": 17.5
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    }
+                ],
+                "productTitleTwo": "Ready To Drink",
+                "ProductsTwo": [
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    }
+                ],
+                "productTitleThree": "Spirits",
+                "ProductsThree": [
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    }
+                ]
+            }
         },
         {
             "id": 5,
@@ -63,7 +407,93 @@
                 "time": "50-70 min"
             },
             "rating": 4.4,
-            "Selected": false
+            "Selected": false,
+            "productDetails": {
+                "productTitleOne": "Deals",
+                "ProductsOne": [
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Alexander Keith's India",
+                        "price": 17.5
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    }
+                ],
+                "productTitleTwo": "Dairy & Eggs",
+                "ProductsTwo": [
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    }
+                ],
+                "productTitleThree": "Fruits & Vegetables",
+                "ProductsThree": [
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    }
+                ]
+            }
         },
         {
             "id": 6,
@@ -76,7 +506,63 @@
                 "time": "10-20 min"
             },
             "rating": 4.4,
-            "Selected": false
+            "Selected": false,
+            "productDetails": {
+                "productTitleOne": "Picked for you",
+                "ProductsOne": [
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Alexander Keith's India",
+                        "price": 17.5
+                    },
+                    {
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "title": "Heineken",
+                        "price": 12.95
+                    }
+                ],
+                "productTitleTwo": "Burgers & Sandwhiches Combos",
+                "ProductsTwo": [
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "price": 3.4
+                    }
+                ],
+                "productTitleThree": "Burgers & Sandwhiches(New)",
+                "ProductsThree": [
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    },
+                    {
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
+                        "title": "Absolut Citron Vodka(750ml)",
+                        "price": 30.95
+                    }
+                ]
+            }
         }
     ]
 }

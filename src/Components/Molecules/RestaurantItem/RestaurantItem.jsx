@@ -11,10 +11,11 @@ export default function RestaurantItem({
     time,
     rating,
     toggleSwitch,
-    item
+    item,
+    onPressHandler
 }) {
     return (
-        <TouchableOpacity>
+        <TouchableOpacity onPress={onPressHandler}>
             <Image
                 source={{
                     uri: img,

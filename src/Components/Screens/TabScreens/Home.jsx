@@ -11,10 +11,11 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import RestaurantItemsContent from '../../Organisms/RestaurantsItemsContent/RestaurantItemsContent';
 import { data } from '../../../Data/Restaurants.json';
 
-export default function Home() {
+export default function Home({ navigation }) {
     const [inputs, setInputs] = React.useState('');
     const [isOn, setIsOn] = useState(true);
     const [select, setSelect] = useState(data);
+    // add state when each restaurant is selected added it to an array use find object
 
     const toggleSwitch = () => {
         setIsOn((isOn) => !isOn);
@@ -30,8 +31,12 @@ export default function Home() {
         });
         setSelect(selectedItem);
     };
+
+    const onPressHandler = () => {
+        navigation.navigate('ItemDetailPage');
+    };
     return (
-        <View>
+        <View style={{ backgroundColor: '#F0F0F0' }}>
             {isOn ? (
                 <View style={{ marginBottom: 95 }}>
                     <StatusBar />
@@ -82,7 +87,11 @@ export default function Home() {
                             dividerVerticalLine={<View style={styles.dividerVerticalLineStyling} />}
                         />
                         <SelectTypeContent data={selectLabels} />
-                        <RestaurantItemsContent data={select} toggleSwitch={toggleActive} />
+                        <RestaurantItemsContent
+                            data={select}
+                            toggleSwitch={toggleActive}
+                            onPressHandler={onPressHandler}
+                        />
                     </ScrollView>
                 </View>
             ) : (
