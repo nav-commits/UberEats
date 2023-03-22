@@ -15,7 +15,7 @@ export default function RestaurantItem({
     onPressHandler
 }) {
     return (
-        <TouchableOpacity onPress={onPressHandler}>
+        <TouchableOpacity onPress={() => onPressHandler(name)}>
             <Image
                 source={{
                     uri: img,
