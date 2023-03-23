@@ -23,7 +23,11 @@ export default function App() {
                         options={{ headerShown: false }}
                         component={BottomNavigation}
                     />
-                    <Stack.Screen name='ItemDetailPage' component={ItemDetailScreen} />
+                    <Stack.Screen
+                        // options={{ headerShown: false }}
+                        name='ItemDetailPage'
+                        component={ItemDetailScreen}
+                    />
                 </Stack.Navigator>
             </NavigationContainer>
         </MainContextProvider>

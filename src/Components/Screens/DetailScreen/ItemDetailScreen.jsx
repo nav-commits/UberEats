@@ -1,15 +1,14 @@
-import { View, Text, Image, StyleSheet, FlatList } from 'react-native';
+import { View, Text, Image, StyleSheet, FlatList, ScrollView } from 'react-native';
 import { MainContext } from '../../../Context/MainContext';
-import React, { useContext, useEffect, useState } from 'react';
-
+import React, { useContext } from 'react';
+import ProductItemContent from '../../Organisms/ProductItemContent/ProductItemContent';
+import { allItems } from '../../../Utils/ProductItemLabels';
 export default function ItemDetailScreen() {
     const { itemData } = useContext(MainContext);
+    
     const findItemProductOne = itemData.map((foundItem) =>
         foundItem?.productDetails?.ProductsOne.filter((findItem) => {
-            let checkItem =
-                findItem.productTitle === 'Grocery' ||
-                findItem.productTitle === 'Beer & Cider' ||
-                findItem.productTitle === 'Deals';
+            let checkItem = allItems.includes(findItem?.productTitle);
             return checkItem;
         })
     );
@@ -17,10 +16,7 @@ export default function ItemDetailScreen() {
 
     const findItemProductTwo = itemData.map((foundItem) =>
         foundItem?.productDetails?.ProductsTwo.filter((findItem) => {
-            let checkItem =
-                findItem.productTitle === 'Candles' ||
-                findItem.productTitle === 'Ready To Drink' ||
-                findItem.productTitle === 'Dairy & Eggs';
+            let checkItem = allItems.includes(findItem?.productTitle);
             return checkItem;
         })
     );
@@ -28,128 +24,52 @@ export default function ItemDetailScreen() {
 
     const findItemProductThree = itemData.map((foundItem) =>
         foundItem?.productDetails?.ProductsThree.filter((findItem) => {
-            let checkItem =
-                findItem.productTitle === 'Spirits' ||
-                findItem.productTitle === 'Kitchen products' ||
-                findItem.productTitle === 'Fruits & Vegetables';
+            let checkItem = allItems.includes(findItem?.productTitle);
             return checkItem;
         })
     );
     let flatProductThreeArray = findItemProductThree.flat();
 
+    // put all arrays into one for the json array and then filter for each flatlist component
+    // check tomorrow
+    //  create seperate componnent for each flat list render item
+
     return (
         <View>
-            {itemData.map((item, i) => (
-                <View key={i}>
-                    <Text
-                        style={{
-                            padding: 12,
-                            fontSize: 15,
-                            fontWeight: 'bold',
-                        }}
-                    >
-                        {item.productDetails?.productTitleOne}
-                    </Text>
-                </View>
-            ))}
-            <FlatList
-                style={styles.listStyle}
-                keyExtractor={(key) => {
-                    return key.key;
-                }}
-                horizontal
-                showsHorizontalScrollIndicator={false}
-                data={flatArray}
-                renderItem={({ item }) => {
-                    return (
-                        <View>
-                            <View style={styles.textStyle}>
-                                <Text>{item.title}</Text>
-                                <Text>${item.price}</Text>
-                            </View>
+            <ScrollView showsVerticalScrollIndicator={false}>
+                {itemData.map((item, i) => (
+                    <View key={i}>
+                        <Image
+                            source={{
+                                uri: item.img,
+                            }}
+                            style={{ width: '100%', height: 180 }}
+                        />
+                    </View>
+                ))}
+                <Text>
+                    {itemData.map((item, i) => (
+                        <View key={i}>
+                            <Text
+                                style={styles.texStyle}
+                            >
+                                {item.name} {item.location}
+                            </Text>
                         </View>
-                    );
-                }}
-            />
-            {itemData.map((item, i) => (
-                <View key={i}>
-                    <Text
-                        style={{
-                            padding: 12,
-                            fontSize: 15,
-                            fontWeight: 'bold',
-                        }}
-                    >
-                        {item.productDetails?.productTitleTwo}
-                    </Text>
-                </View>
-            ))}
-            <FlatList
-                style={styles.listStyle}
-                keyExtractor={(key) => {
-                    return key.key;
-                }}
-                horizontal
-                showsHorizontalScrollIndicator={false}
-                data={flatProductTwoArray}
-                renderItem={({ item }) => {
-                    return (
-                        <View>
-                            <View style={styles.textStyle}>
-                                <Text>{item.title}</Text>
-                                <Text>${item.price}</Text>
-                            </View>
-                        </View>
-                    );
-                }}
-            />
-            {itemData.map((item, i) => (
-                <View key={i}>
-                    <Text
-                        style={{
-                            padding: 12,
-                            fontSize: 15,
-                            fontWeight: 'bold',
-                        }}
-                    >
-                        {item.productDetails?.productTitleThree}
-                    </Text>
-                </View>
-            ))}
-            <FlatList
-                style={styles.listStyle}
-                keyExtractor={(key) => {
-                    return key.key;
-                }}
-                horizontal
-                showsHorizontalScrollIndicator={false}
-                data={flatProductThreeArray}
-                renderItem={({ item }) => {
-                    return (
-                        <View>
-                            <View style={styles.textStyle}>
-                                <Text>{item.title}</Text>
-                                <Text>${item.price}</Text>
-                            </View>
-                        </View>
-                    );
-                }}
-            />
+                    ))}
+                </Text>
+                <ProductItemContent data={flatArray} itemData={itemData} />
+                <ProductItemContent data={flatProductTwoArray} itemData={itemData} />
+                <ProductItemContent data={flatProductThreeArray} itemData={itemData} />
+            </ScrollView>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
-    textStyle: {
-        fontSize: 20,
-        padding: 30,
-
-        margin: 20,
-        color: 'white',
-    },
-    listStyle: {
-        textAlign: 'center',
-        margin: 5,
-        padding: 10,
+    texStyle: {
+        padding: 12,
+        fontSize: 15,
+        fontWeight: 'bold',
     },
 });
