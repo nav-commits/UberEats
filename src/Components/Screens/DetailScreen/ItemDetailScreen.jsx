@@ -5,7 +5,7 @@ import ProductItemContent from '../../Organisms/ProductItemContent/ProductItemCo
 import { allItems } from '../../../Utils/ProductItemLabels';
 export default function ItemDetailScreen() {
     const { itemData } = useContext(MainContext);
-    
+
     const findItemProductOne = itemData.map((foundItem) =>
         foundItem?.productDetails?.ProductsOne.filter((findItem) => {
             let checkItem = allItems.includes(findItem?.productTitle);
@@ -21,18 +21,9 @@ export default function ItemDetailScreen() {
         })
     );
     let flatProductTwoArray = findItemProductTwo.flat();
-
-    const findItemProductThree = itemData.map((foundItem) =>
-        foundItem?.productDetails?.ProductsThree.filter((findItem) => {
-            let checkItem = allItems.includes(findItem?.productTitle);
-            return checkItem;
-        })
-    );
-    let flatProductThreeArray = findItemProductThree.flat();
-
-    // put all arrays into one for the json array and then filter for each flatlist component
-    // check tomorrow
-    //  create seperate componnent for each flat list render item
+    // 1. fix json data for each list item - done
+    // 2. create component for menuitems
+    // 3. put all arrays into one for the json array and then filter for each flatlist component (refactor code)
 
     return (
         <View>
@@ -45,22 +36,38 @@ export default function ItemDetailScreen() {
                             }}
                             style={{ width: '100%', height: 180 }}
                         />
+                        <Text style={styles.texStyle}>
+                            {item.name} {item.location}
+                        </Text>
+                        <Text style={{ fontSize: 12, color: 'grey', paddingLeft: 5 }}>
+                            {item?.deliveryDetails?.time} {item?.deliveryDetails?.deliveryCost}{' '}
+                            {item?.deliveryDetails?.deliveryFee}
+                        </Text>
                     </View>
                 ))}
-                <Text>
-                    {itemData.map((item, i) => (
-                        <View key={i}>
-                            <Text
-                                style={styles.texStyle}
-                            >
-                                {item.name} {item.location}
-                            </Text>
-                        </View>
-                    ))}
-                </Text>
-                <ProductItemContent data={flatArray} itemData={itemData} />
-                <ProductItemContent data={flatProductTwoArray} itemData={itemData} />
-                <ProductItemContent data={flatProductThreeArray} itemData={itemData} />
+
+                {itemData.some((item) => item?.productItem === 'productItem') ? (
+                    <View>
+                        {itemData.map((item, i) => (
+                            <View key={i}>
+                                <Text style={styles.texStyle}>
+                                    {item.productDetails?.productTitleOne}
+                                </Text>
+                            </View>
+                        ))}
+                        <ProductItemContent data={flatArray} itemData={itemData} />
+                        {itemData.map((item, i) => (
+                            <View key={i}>
+                                <Text style={styles.texStyle}>
+                                    {item.productDetails?.productTitleTwo}
+                                </Text>
+                            </View>
+                        ))}
+                        <ProductItemContent data={flatProductTwoArray} itemData={itemData} />
+                    </View>
+                ) : (
+                    <Text>hello world</Text>
+                )}
             </ScrollView>
         </View>
     );
@@ -68,8 +75,9 @@ export default function ItemDetailScreen() {
 
 const styles = StyleSheet.create({
     texStyle: {
-        padding: 12,
-        fontSize: 15,
+        paddingLeft: 5,
+        paddingTop: 20,
+        fontSize: 17,
         fontWeight: 'bold',
     },
 });
