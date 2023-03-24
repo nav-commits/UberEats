@@ -10,4 +10,5 @@ export const allItems = [
     'Fruits & Vegetables',
     'Mcdonald',
     'Diary Queen',
+    'Subway',
 ];

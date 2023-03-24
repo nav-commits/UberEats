@@ -10,7 +10,8 @@ export default function MenuItem({ data }) {
                         justifyContent: 'space-between',
                         flexDirection: 'row',
                         alignItems: 'center',
-                        paddingLeft: 15,
+
+                        padding: 10
                     }}
                 >
                     <View>

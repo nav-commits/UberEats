@@ -198,60 +198,50 @@
             "rating": 4.7,
             "Selected": false,
             "productDetails": {
-                "productTitleOne": "Beer & Cider",
+                "productTitleOne": "Picked for you",
                 "ProductsOne": [
                     {
-                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
-                        "title": "Heineken",
-                        "price": 12.95
+                        "img": "https://www.subway.com/en-ca/-/media/northamerica/Canada/HomePageLogOut/Desktop---Sweet-Onion-Chicken-Teriyaki-Footlong_-(1).jpg?sc_lang=en-CA&la=en-CA&h=485&w=505&mw=0&hash=07B2AA204CCC49B8029BBCC14EDFABB2",
+                        "title": "Footlong Chicken Teriyaki Crunch Sub",
+                        "description": "Hot tender, shaved stake, served on the bread of your choice.Its just bursting with flavour",
+                        "price": 14.09,
+                        "calories": "1060 Cal",
+                        "productTitle": "Subway"
                     },
                     {
-                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
-                        "title": "Alexander Keith's India",
-                        "price": 17.5
-                    },
-                    {
-                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
-                        "title": "Heineken",
-                        "price": 12.95
-                    },
-                    {
-                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
-                        "title": "Heineken",
-                        "price": 12.95
-                    },
-                    {
-                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
-                        "title": "Heineken",
-                        "price": 12.95
+                        "img": "https://mma.prnewswire.com/media/1816157/sw43371us_SweetOnionSteakTeriyaki_Footlong_Silo_RGB.jpg?p=facebook",
+                        "title": "Footlong Steak & Cheese Sub",
+                        "description": "Hot tender, shaved stake, served on the bread of your choice.Its just bursting with flavour",
+                        "price": 12.59,
+                        "calories": "620 Cal",
+                        "productTitle": "Subway"
                     }
                 ],
-                "productTitleTwo": "Ready To Drink",
+                "productTitleTwo": "Footlong Combos",
                 "ProductsTwo": [
                     {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
-                        "title": "Matt & Steve",
-                        "price": 3.4
+                        "img": "https://tb-static.uber.com/prod/image-proc/processed_images/01d14e99d4f8b8fc457aa8005506d5e7/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
+                        "title": "Footlong Steak & Cheese Sub Combo",
+                        "description": "Hot tender, shaved stake, served on the bread of your choice.Its just bursting with flavour",
+                        "calories": "[770-2060 Cal",
+                        "price": 16.79,
+                        "productTitle": "Subway"
                     },
                     {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
-                        "title": "Matt & Steve",
-                        "price": 3.4
+                        "img": "https://menu-images-static.skipthedishes.com/images/resized/item-f81de4a8b9d9532e4e2a.jpg",
+                        "title": "Footlong Sweet Onion Chicken Teriyaki Sub Combo",
+                        "description": "Hot tender, shaved stake, served on the bread of your choice.Its just bursting with flavour",
+                        "calories": "[830-1120 Cal",
+                        "price": 16.49,
+                        "productTitle": "Subway"
                     },
                     {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
-                        "title": "Matt & Steve",
-                        "price": 3.4
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
-                        "title": "Matt & Steve",
-                        "price": 3.4
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
-                        "title": "Matt & Steve",
-                        "price": 3.4
+                        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrtLFF3LEOJy-VZ8bpldBDUc4g0jTP0JW7LQ&usqp=CAU",
+                        "title": "Footlong Turkey Breast Sub Combo",
+                        "calories": "[670-960 Cal]",
+                        "description": "Hot tender, shaved stake, served on the bread of your choice.Its just bursting with flavour",
+                        "price": 15.49,
+                        "productTitle": "Subway"
                     }
                 ]
             }
