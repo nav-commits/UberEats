@@ -1,8 +1,9 @@
-import { View, Text, Image, StyleSheet, FlatList, ScrollView } from 'react-native';
+import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
 import { MainContext } from '../../../Context/MainContext';
 import React, { useContext } from 'react';
 import ProductItemContent from '../../Organisms/ProductItemContent/ProductItemContent';
 import { allItems } from '../../../Utils/ProductItemLabels';
+import MenuItem from '../../Molecules/MenuItem/MenuItem';
 export default function ItemDetailScreen() {
     const { itemData } = useContext(MainContext);
 
@@ -66,7 +67,24 @@ export default function ItemDetailScreen() {
                         <ProductItemContent data={flatProductTwoArray} itemData={itemData} />
                     </View>
                 ) : (
-                    <Text>hello world</Text>
+                    <View>
+                        {itemData.map((item, i) => (
+                            <View key={i}>
+                                <Text style={styles.texStyle}>
+                                    {item.productDetails?.productTitleOne}
+                                </Text>
+                            </View>
+                        ))}
+                        <MenuItem data={flatArray} />
+                        {itemData.map((item, i) => (
+                            <View key={i}>
+                                <Text style={styles.texStyle}>
+                                    {item.productDetails?.productTitleTwo}
+                                </Text>
+                            </View>
+                        ))}
+                        <MenuItem data={flatProductTwoArray} />
+                    </View>
                 )}
             </ScrollView>
         </View>
@@ -75,7 +93,7 @@ export default function ItemDetailScreen() {
 
 const styles = StyleSheet.create({
     texStyle: {
-        paddingLeft: 5,
+        paddingLeft: 8,
         paddingTop: 20,
         fontSize: 17,
         fontWeight: 'bold',

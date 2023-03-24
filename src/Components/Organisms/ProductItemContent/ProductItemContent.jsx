@@ -1,6 +1,5 @@
 import { View, Text, Image, StyleSheet, FlatList, ScrollView } from 'react-native';
-import { MainContext } from '../../../Context/MainContext';
-import React, { useContext } from 'react';
+import React from 'react';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Button from '../../Atoms/Button/Button';
 import Entypo from 'react-native-vector-icons/Entypo';

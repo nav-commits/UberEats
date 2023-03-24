@@ -8,4 +8,6 @@ export const allItems = [
     'Spirits',
     'Kitchen products',
     'Fruits & Vegetables',
+    'Mcdonald',
+    'Diary Queen',
 ];

@@ -5,7 +5,7 @@ export default function Browse({navigation}) {
 
     return (
         <View style={{ padding: 40 }}>
-           <Text>Food</Text>
+           <Text>Catagories</Text>
         </View>
     );
 }

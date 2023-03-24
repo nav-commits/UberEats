@@ -21,7 +21,7 @@
                         "img": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/6168B-MllHS._AC_SL1200_.jpg",
                         "productTitle": "Grocery",
                         "title": "Skittles Berry Candy",
-                        "price": 2.50
+                        "price": 2.5
                     },
                     {
                         "id": 2,
@@ -42,14 +42,14 @@
                         "img": "https://assets.shop.loblaws.ca/products/20306258/b2/en/front/20306258_front_a06_@2.png",
                         "productTitle": "Grocery",
                         "title": "Nestle Areo Mini milk Chcolate",
-                        "price": 2.50
+                        "price": 2.5
                     },
                     {
                         "id": 5,
                         "img": "https://www.dollarama.com/images/1200313_0_XL.jpg",
                         "productTitle": "Grocery",
                         "title": "Fruitee Gummee Sour Neon",
-                        "price": 1.00
+                        "price": 1.0
                     }
                 ],
                 "productTitleTwo": "Candles",
@@ -59,7 +59,7 @@
                         "img": "https://i5.walmartimages.com/asr/8966fbd2-7ce1-4739-9670-3325b7358018.2b8a98eb17d71ce5b2a9a92f36b1166d.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
                         "title": "Flower Shaped Floating",
                         "productTitle": "Candles",
-                        "price": 2.00
+                        "price": 2.0
                     },
                     {
                         "id": 2,
@@ -73,7 +73,7 @@
                         "img": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/3e329b8c-9a79-48c5-aaf4-9e8725a056e4-retina-large.jpg",
                         "title": "Far East Pillar Church Candle",
                         "productTitle": "Candles",
-                        "price": 2.50
+                        "price": 2.5
                     },
                     {
                         "id": 4,
@@ -253,34 +253,6 @@
                         "title": "Matt & Steve",
                         "price": 3.4
                     }
-                ],
-                "productTitleThree": "Spirits",
-                "ProductsThree": [
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
-                        "title": "Absolut Citron Vodka(750ml)",
-                        "price": 30.95
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
-                        "title": "Absolut Citron Vodka(750ml)",
-                        "price": 30.95
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
-                        "title": "Absolut Citron Vodka(750ml)",
-                        "price": 30.95
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
-                        "title": "Absolut Citron Vodka(750ml)",
-                        "price": 30.95
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
-                        "title": "Absolut Citron Vodka(750ml)",
-                        "price": 30.95
-                    }
                 ]
             }
         },
@@ -297,88 +269,38 @@
             "rating": 4.4,
             "Selected": false,
             "productDetails": {
-                "productTitleOne": "Beer & Cider",
+                "productTitleOne": "Buy 1 get 1 free",
                 "ProductsOne": [
                     {
-                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
-                        "title": "Heineken",
-                        "price": 12.95
-                    },
-                    {
-                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
-                        "title": "Alexander Keith's India",
-                        "price": 17.5
-                    },
-                    {
-                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
-                        "title": "Heineken",
-                        "price": 12.95
-                    },
-                    {
-                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
-                        "title": "Heineken",
-                        "price": 12.95
-                    },
-                    {
-                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
-                        "title": "Heineken",
-                        "price": 12.95
+                        "img": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-chicken-big-mac-6:1-3-product-tile-desktop?wid=829&hei=515&dpr=off",
+                        "title": "ChickenBig Mac",
+                        "calories": "[610.0 Cals]",
+                        "price": 4.59,
+                        "productTitle": "Mcdonald"
                     }
                 ],
-                "productTitleTwo": "Ready To Drink",
+                "productTitleTwo": "Most Popular",
                 "ProductsTwo": [
                     {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
-                        "title": "Matt & Steve",
-                        "price": 3.4
+                        "img": "https://simply.delivery/wp-content/uploads/2020/04/mcdonalds-big-mac-meal.jpg",
+                        "title": "Big Mac Extra Value",
+                        "calories": "[710-1140 Cals]",
+                        "price": 11.79,
+                        "productTitle": "Mcdonald"
                     },
                     {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
-                        "title": "Matt & Steve",
-                        "price": 3.4
+                        "img": "https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=auto,quality=50/media/photosV2/6cb06867-f698-447e-89e5-d680687d30f5-retina-large.jpg",
+                        "title": "10 McNuggets Extra Value",
+                        "calories": "[840-1190 Cals]",
+                        "price": 14.14,
+                        "productTitle": "Mcdonald"
                     },
                     {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
-                        "title": "Matt & Steve",
-                        "price": 3.4
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
-                        "title": "Matt & Steve",
-                        "price": 3.4
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
-                        "title": "Matt & Steve",
-                        "price": 3.4
-                    }
-                ],
-                "productTitleThree": "Spirits",
-                "ProductsThree": [
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
-                        "title": "Absolut Citron Vodka(750ml)",
-                        "price": 30.95
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
-                        "title": "Absolut Citron Vodka(750ml)",
-                        "price": 30.95
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
-                        "title": "Absolut Citron Vodka(750ml)",
-                        "price": 30.95
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
-                        "title": "Absolut Citron Vodka(750ml)",
-                        "price": 30.95
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
-                        "title": "Absolut Citron Vodka(750ml)",
-                        "price": 30.95
+                        "img": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-20-chicken-mcnuggets:1-3-product-tile-desktop?wid=829&hei=515&dpr=off",
+                        "title": "20 Chicken McNuggets",
+                        "calories": "[950-1160 Cals]",
+                        "price": 14.14,
+                        "productTitle": "Mcdonald"
                     }
                 ]
             }
@@ -449,7 +371,7 @@
                         "img": "https://s.cornershopapp.com/product-images/2582333.jpe?versionId=AvvLUzxLZFlYt1PuZKkcbvu2n2LurXa.",
                         "title": "Premium Banana",
                         "productTitle": "Fruits & Vegetables",
-                        "price": 1.30
+                        "price": 1.3
                     },
                     {
                         "id": 3,
@@ -491,55 +413,35 @@
                 "productTitleOne": "Picked for you",
                 "ProductsOne": [
                     {
-                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
-                        "title": "Heineken",
-                        "price": 12.95
-                    },
-                    {
-                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
-                        "title": "Alexander Keith's India",
-                        "price": 17.5
-                    },
-                    {
-                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
-                        "title": "Heineken",
-                        "price": 12.95
+                        "img": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-chicken-big-mac-6:1-3-product-tile-desktop?wid=829&hei=515&dpr=off",
+                        "title": "ChickenBig Mac",
+                        "calories": "[610.0 Cals]",
+                        "price": 4.59,
+                        "productTitle": "Diary Queen"
                     }
                 ],
-                "productTitleTwo": "Burgers & Sandwhiches Combos",
+                "productTitleTwo": "Limited Time Offering",
                 "ProductsTwo": [
                     {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
-                        "title": "Matt & Steve",
-                        "price": 3.4
+                        "img": "https://simply.delivery/wp-content/uploads/2020/04/mcdonalds-big-mac-meal.jpg",
+                        "title": "Big Mac Extra Value",
+                        "calories": "[710-1140 Cals]",
+                        "price": 11.79,
+                        "productTitle": "Diary Queen"
                     },
                     {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
-                        "title": "Matt & Steve",
-                        "price": 3.4
+                        "img": "https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=auto,quality=50/media/photosV2/6cb06867-f698-447e-89e5-d680687d30f5-retina-large.jpg",
+                        "title": "10 McNuggets Extra Value",
+                        "calories": "[840-1190 Cals]",
+                        "price": 14.14,
+                        "productTitle": "Diary Queen"
                     },
                     {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
-                        "title": "Matt & Steve",
-                        "price": 3.4
-                    }
-                ],
-                "productTitleThree": "Burgers & Sandwhiches(New)",
-                "ProductsThree": [
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
-                        "title": "Absolut Citron Vodka(750ml)",
-                        "price": 30.95
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
-                        "title": "Absolut Citron Vodka(750ml)",
-                        "price": 30.95
-                    },
-                    {
-                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/2/5/7/2/257238.jpg.thumb.1280.1280.jpg",
-                        "title": "Absolut Citron Vodka(750ml)",
-                        "price": 30.95
+                        "img": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-20-chicken-mcnuggets:1-3-product-tile-desktop?wid=829&hei=515&dpr=off",
+                        "title": "20 Chicken McNuggets",
+                        "calories": "[950-1160 Cals]",
+                        "price": 14.14,
+                        "productTitle": "Diary Queen"
                     }
                 ]
             }
