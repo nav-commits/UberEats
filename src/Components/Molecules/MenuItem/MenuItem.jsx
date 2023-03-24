@@ -1,21 +1,26 @@
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
 export default function MenuItem({ data }) {
     return (
         <View>
             {data.map((item, i) => (
-                <View
+                <TouchableOpacity
                     key={i}
                     style={{
                         justifyContent: 'space-between',
                         flexDirection: 'row',
                         alignItems: 'center',
-                        paddingLeft: 15
+                        paddingLeft: 15,
                     }}
                 >
                     <View>
                         <Text style={styles.textStyle}>{item.title}</Text>
-                        <Text>{item.calories}</Text>
+                        {item?.calories && <Text>{item?.calories}</Text>}
+                        {item?.description && (
+                            <Text style={{ width: 250, color: 'grey', fontSize: 13 }}>
+                                {item?.description}
+                            </Text>
+                        )}
                         <Text>${item.price}</Text>
                     </View>
                     <Image
@@ -24,7 +29,7 @@ export default function MenuItem({ data }) {
                         }}
                         style={{ height: 90, width: 85, backgroundColor: '#F0F0F0', padding: 20 }}
                     />
-                </View>
+                </TouchableOpacity>
             ))}
         </View>
     );
@@ -37,5 +42,5 @@ const styles = StyleSheet.create({
     textStyle: {
         fontSize: 13,
         fontWeight: 'bold',
-    }
+    },
 });

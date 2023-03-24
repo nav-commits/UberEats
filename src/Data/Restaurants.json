@@ -413,34 +413,41 @@
                 "productTitleOne": "Picked for you",
                 "ProductsOne": [
                     {
-                        "img": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-chicken-big-mac-6:1-3-product-tile-desktop?wid=829&hei=515&dpr=off",
-                        "title": "ChickenBig Mac",
-                        "calories": "[610.0 Cals]",
-                        "price": 4.59,
+                        "img": "https://dqtyler.com/media/k2/items/cache/0b1ad7a7b79268a1f4558db78e092446_XL.jpg",
+                        "title": "Oreo Cookie Blizzard Treat",
+                        "description": "Oreo Cookie pieces blended with DQ creamy vanilla soft serve",
+                        "price": 5.75,
+                        "productTitle": "Diary Queen"
+                    },
+                    {
+                        "img": "https://fastfoodnutrition.org/item-photos/full/161335879163799.jpg",
+                        "title": "Strawberry Cheesecake Blizzard Treat",
+                        "description": "Oreo Cookie pieces blended with DQ creamy vanilla soft serve",
+                        "price": 5.75,
                         "productTitle": "Diary Queen"
                     }
                 ],
-                "productTitleTwo": "Limited Time Offering",
+                "productTitleTwo": "Blizzard Treats",
                 "ProductsTwo": [
                     {
-                        "img": "https://simply.delivery/wp-content/uploads/2020/04/mcdonalds-big-mac-meal.jpg",
-                        "title": "Big Mac Extra Value",
-                        "calories": "[710-1140 Cals]",
-                        "price": 11.79,
+                        "img": "https://dqtyler.com/media/k2/items/cache/af2ef6a0e2c9c528b09655df79f3b312_XL.jpg",
+                        "title": "Royal OREO Blizzard Treat",
+                        "description": "Oreo Cookie pieces blended with DQ creamy vanilla soft serve",
+                        "price": 6.83,
                         "productTitle": "Diary Queen"
                     },
                     {
-                        "img": "https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=auto,quality=50/media/photosV2/6cb06867-f698-447e-89e5-d680687d30f5-retina-large.jpg",
-                        "title": "10 McNuggets Extra Value",
-                        "calories": "[840-1190 Cals]",
-                        "price": 14.14,
+                        "img": "https://dqtyler.com/media/k2/items/cache/0b1ad7a7b79268a1f4558db78e092446_XL.jpg",
+                        "title": "OREO Cookie Blizzard Treat",
+                        "description": "Oreo Cookie pieces blended with DQ creamy vanilla soft serve",
+                        "price": 5.75,
                         "productTitle": "Diary Queen"
                     },
                     {
-                        "img": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-20-chicken-mcnuggets:1-3-product-tile-desktop?wid=829&hei=515&dpr=off",
-                        "title": "20 Chicken McNuggets",
-                        "calories": "[950-1160 Cals]",
-                        "price": 14.14,
+                        "img": "https://fastfoodnutrition.org/item-photos/full/161335879163799.jpg",
+                        "title": "Strawberry Cheesecake Blizzard Treat",
+                        "description": "Oreo Cookie pieces blended with DQ creamy vanilla soft serve",
+                        "price": 5.75,
                         "productTitle": "Diary Queen"
                     }
                 ]
