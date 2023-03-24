@@ -273,7 +273,7 @@
                 "ProductsOne": [
                     {
                         "img": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-chicken-big-mac-6:1-3-product-tile-desktop?wid=829&hei=515&dpr=off",
-                        "title": "ChickenBig Mac",
+                        "title": "Chicken Big Mac",
                         "calories": "[610.0 Cals]",
                         "price": 4.59,
                         "productTitle": "Mcdonald"
@@ -283,7 +283,7 @@
                 "ProductsTwo": [
                     {
                         "img": "https://simply.delivery/wp-content/uploads/2020/04/mcdonalds-big-mac-meal.jpg",
-                        "title": "Big Mac Extra Value",
+                        "title": " Big Mac Extra Value",
                         "calories": "[710-1140 Cals]",
                         "price": 11.79,
                         "productTitle": "Mcdonald"

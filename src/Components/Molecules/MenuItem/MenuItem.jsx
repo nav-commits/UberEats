@@ -7,10 +7,10 @@ export default function MenuItem({ data }) {
                 <View
                     key={i}
                     style={{
-                        justifyContent: 'space-evenly',
+                        justifyContent: 'space-between',
                         flexDirection: 'row',
                         alignItems: 'center',
-                        gap: 110,
+                        paddingLeft: 15
                     }}
                 >
                     <View>
