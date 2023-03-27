@@ -11,12 +11,92 @@
                 "time": "25-45 min"
             },
             "rating": 4.5,
-            "Selected": false
+            "Selected": false,
+            "productItem": "productItem",
+            "productDetails": {
+                "productTitleOne": "Grocery",
+                "ProductsOne": [
+                    {
+                        "id": 1,
+                        "img": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/6168B-MllHS._AC_SL1200_.jpg",
+                        "productTitle": "Grocery",
+                        "title": "Skittles Berry Candy",
+                        "price": 2.5
+                    },
+                    {
+                        "id": 2,
+                        "img": "https://storage.googleapis.com/images-sof-prd-9fa6b8b.sof.prd.v8.commerce.mi9cloud.com/product-images/zoom/00059600048141.jpg",
+                        "productTitle": "Grocery",
+                        "title": "Minute Maid Apple Juice",
+                        "price": 1.25
+                    },
+                    {
+                        "id": 3,
+                        "img": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61tNyz8dAgL._AC_SX679_.jpg",
+                        "productTitle": "Grocery",
+                        "title": "Trident Watermelon gum",
+                        "price": 1.25
+                    },
+                    {
+                        "id": 4,
+                        "img": "https://assets.shop.loblaws.ca/products/20306258/b2/en/front/20306258_front_a06_@2.png",
+                        "productTitle": "Grocery",
+                        "title": "Nestle Areo Mini milk Chcolate",
+                        "price": 2.5
+                    },
+                    {
+                        "id": 5,
+                        "img": "https://www.dollarama.com/images/1200313_0_XL.jpg",
+                        "productTitle": "Grocery",
+                        "title": "Fruitee Gummee Sour Neon",
+                        "price": 1.0
+                    }
+                ],
+                "productTitleTwo": "Candles",
+                "ProductsTwo": [
+                    {
+                        "id": 1,
+                        "img": "https://i5.walmartimages.com/asr/8966fbd2-7ce1-4739-9670-3325b7358018.2b8a98eb17d71ce5b2a9a92f36b1166d.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+                        "title": "Flower Shaped Floating",
+                        "productTitle": "Candles",
+                        "price": 2.0
+                    },
+                    {
+                        "id": 2,
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Dollarama Scented Candle In",
+                        "productTitle": "Candles",
+                        "price": 4.25
+                    },
+                    {
+                        "id": 3,
+                        "img": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/3e329b8c-9a79-48c5-aaf4-9e8725a056e4-retina-large.jpg",
+                        "title": "Far East Pillar Church Candle",
+                        "productTitle": "Candles",
+                        "price": 2.5
+                    },
+                    {
+                        "id": 4,
+                        "img": "https://www.dollarama.com/images/1500334_0_L.jpg",
+                        "title": "Dollarma Battery-Operared Led",
+                        "productTitle": "Candles",
+                        "price": 1.25
+                    },
+                    {
+                        "id": 5,
+                        "img": "https://i5.walmartimages.com/asr/40e67a51-60d9-4796-b663-6add3bd49db0.a563ca1bc9f2304daeb4bc0e01b93cea.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+                        "title": "Dollarma gas lighter bbqs",
+                        "productTitle": "Candles",
+                        "price": 3.4
+                    }
+                ]
+            }
         },
         {
             "id": 2,
             "img": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2023/01/20230112130156-257cb22a419b6c13351024c9b0df74d0501534f05a9c91676f5fa45edc654e48.jpg",
             "name": "LCBO",
+            "productItem": "productItem",
             "location": "Sanadalwood Parkway",
             "deliveryDetails": {
                 "deliveryCost": 5.49,
@@ -24,7 +104,86 @@
                 "time": "20-40 min"
             },
             "rating": 4.9,
-             "Selected": false
+            "Selected": false,
+            "productDetails": {
+                "productTitleOne": "Beer & Cider",
+                "ProductsOne": [
+                    {
+                        "id": 1,
+                        "img": "https://beermktonline.ca/1544-thickbox_default/heineken-330-ml-12-bottle-pack.jpg",
+                        "productTitle": "Beer & Cider",
+                        "title": "Heineken",
+                        "price": 12.95
+                    },
+                    {
+                        "id": 2,
+                        "img": "https://sob-prd-cdn-products.azureedge.net/media/image/product/en/large/0006206712103.jpg",
+                        "productTitle": "Beer & Cider",
+                        "title": "Alexander Keith's India",
+                        "price": 17.5
+                    },
+                    {
+                        "id": 3,
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/3/9/4/0/394015.jpg.thumb.1280.1280.jpg",
+                        "productTitle": "Beer & Cider",
+                        "title": "Brickworks Ciderhouse Batch: 1904",
+                        "price": 12.95
+                    },
+                    {
+                        "id": 4,
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/3/1/4/031451.jpg.thumb.1280.1280.jpg",
+                        "title": "Ace Hill.Carb Free Light Beer(6 X 355)",
+                        "productTitle": "Beer & Cider",
+                        "price": 12.95
+                    },
+
+                    {
+                        "id": 5,
+                        "img": "https://nlliquor.com/wp-content/uploads/2022/10/25439_m.jpg",
+                        "title": "Amsterdam. Boneshaker Beer(473ml)",
+                        "productTitle": "Beer & Cider",
+                        "price": 12.95
+                    }
+                ],
+                "productTitleTwo": "Ready To Drink",
+                "ProductsTwo": [
+                    {
+                        "id": 1,
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/1/5/3/015310.jpg.thumb.1280.1280.jpg",
+                        "title": "Matt & Steve",
+                        "productTitle": "Ready To Drink",
+                        "price": 3.4
+                    },
+                    {
+                        "id": 2,
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/2/4/3/024325.jpg.thumb.1280.1280.jpg",
+                        "title": "Canadian Club GingerAle mixed",
+                        "productTitle": "Ready To Drink",
+                        "price": 3.15
+                    },
+                    {
+                        "id": 3,
+                        "img": "https://www.blackflybooze.com/a/i/site/products/pina-colada-4pk.png",
+                        "title": "Black Fly Rum Pina Colada Drink",
+                        "productTitle": "Ready To Drink",
+                        "price": 11.95
+                    },
+                    {
+                        "id": 4,
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/3/1/3/031353.jpg.thumb.1280.1280.jpg",
+                        "title": "Cottage Springs. Max N' Match",
+                        "productTitle": "Ready To Drink",
+                        "price": 39.95
+                    },
+                    {
+                        "id": 5,
+                        "img": "https://aem.lcbo.com/content/dam/lcbo/products/0/2/4/4/024427.jpg.thumb.1280.1280.jpg",
+                        "title": "Cottage Springs Vodka Iced",
+                        "productTitle": "Ready To Drink",
+                        "price": 25.95
+                    }
+                ]
+            }
         },
         {
             "id": 3,
@@ -37,7 +196,60 @@
                 "time": "50-65 min"
             },
             "rating": 4.7,
-            "Selected": false
+            "Selected": false,
+            "productDetails": {
+                "productTitleOne": "Picked for you",
+                "ProductsOne": [
+                    {
+                        "id": 1,
+                        "img": "https://www.subway.com/en-ca/-/media/northamerica/Canada/HomePageLogOut/Desktop---Sweet-Onion-Chicken-Teriyaki-Footlong_-(1).jpg?sc_lang=en-CA&la=en-CA&h=485&w=505&mw=0&hash=07B2AA204CCC49B8029BBCC14EDFABB2",
+                        "title": "Footlong Chicken Teriyaki Crunch Sub",
+                        "description": "Hot tender, shaved stake, served on the bread of your choice.Its just bursting with flavour",
+                        "price": 14.09,
+                        "calories": "1060 Cal",
+                        "productTitle": "Subway"
+                    },
+                    {
+                        "id": 2,
+                        "img": "https://mma.prnewswire.com/media/1816157/sw43371us_SweetOnionSteakTeriyaki_Footlong_Silo_RGB.jpg?p=facebook",
+                        "title": "Footlong Steak & Cheese Sub",
+                        "description": "Hot tender, shaved stake, served on the bread of your choice.Its just bursting with flavour",
+                        "price": 12.59,
+                        "calories": "620 Cal",
+                        "productTitle": "Subway"
+                    }
+                ],
+                "productTitleTwo": "Footlong Combos",
+                "ProductsTwo": [
+                    {
+                        "id": 1,
+                        "img": "https://tb-static.uber.com/prod/image-proc/processed_images/01d14e99d4f8b8fc457aa8005506d5e7/5954bcb006b10dbfd0bc160f6370faf3.jpeg",
+                        "title": "Footlong Steak & Cheese Sub Combo",
+                        "description": "Hot tender, shaved stake, served on the bread of your choice.Its just bursting with flavour",
+                        "calories": "[770-2060 Cal",
+                        "price": 16.79,
+                        "productTitle": "Subway"
+                    },
+                    {
+                        "id": 2,
+                        "img": "https://menu-images-static.skipthedishes.com/images/resized/item-f81de4a8b9d9532e4e2a.jpg",
+                        "title": "Footlong Sweet Onion Chicken Teriyaki Sub Combo",
+                        "description": "Hot tender, shaved stake, served on the bread of your choice.Its just bursting with flavour",
+                        "calories": "[830-1120 Cal",
+                        "price": 16.49,
+                        "productTitle": "Subway"
+                    },
+                    {
+                        "id": 3,
+                        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrtLFF3LEOJy-VZ8bpldBDUc4g0jTP0JW7LQ&usqp=CAU",
+                        "title": "Footlong Turkey Breast Sub Combo",
+                        "calories": "[670-960 Cal]",
+                        "description": "Hot tender, shaved stake, served on the bread of your choice.Its just bursting with flavour",
+                        "price": 15.49,
+                        "productTitle": "Subway"
+                    }
+                ]
+            }
         },
         {
             "id": 4,
@@ -50,7 +262,47 @@
                 "time": "10-25 min"
             },
             "rating": 4.4,
-            "Selected": false
+            "Selected": false,
+            "productDetails": {
+                "productTitleOne": "Buy 1 get 1 free",
+                "ProductsOne": [
+                    {
+                        "id": 1,
+                        "img": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-chicken-big-mac-6:1-3-product-tile-desktop?wid=829&hei=515&dpr=off",
+                        "title": "Chicken Big Mac",
+                        "calories": "[610.0 Cals]",
+                        "price": 4.59,
+                        "productTitle": "Mcdonald"
+                    }
+                ],
+                "productTitleTwo": "Most Popular",
+                "ProductsTwo": [
+                    {
+                        "id": 1,
+                        "img": "https://simply.delivery/wp-content/uploads/2020/04/mcdonalds-big-mac-meal.jpg",
+                        "title": " Big Mac Extra Value",
+                        "calories": "[710-1140 Cals]",
+                        "price": 11.79,
+                        "productTitle": "Mcdonald"
+                    },
+                    {
+                        "id": 2,
+                        "img": "https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=auto,quality=50/media/photosV2/6cb06867-f698-447e-89e5-d680687d30f5-retina-large.jpg",
+                        "title": "10 McNuggets Extra Value",
+                        "calories": "[840-1190 Cals]",
+                        "price": 14.14,
+                        "productTitle": "Mcdonald"
+                    },
+                    {
+                        "id": 3,
+                        "img": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-20-chicken-mcnuggets:1-3-product-tile-desktop?wid=829&hei=515&dpr=off",
+                        "title": "20 Chicken McNuggets",
+                        "calories": "[950-1160 Cals]",
+                        "price": 14.14,
+                        "productTitle": "Mcdonald"
+                    }
+                ]
+            }
         },
         {
             "id": 5,
@@ -63,7 +315,86 @@
                 "time": "50-70 min"
             },
             "rating": 4.4,
-            "Selected": false
+            "Selected": false,
+            "productItem": "productItem",
+            "productDetails": {
+                "productTitleOne": "Dairy & Eggs",
+                "ProductsOne": [
+                    {
+                        "id": 1,
+                        "img": "https://grange-danone.s3.amazonaws.com/wp-content/uploads/2020/03/05092556/original-almond-beverage-189l-en.png",
+                        "title": "Silk.Almond beverage dairy-free",
+                        "productTitle": "Dairy & Eggs",
+                        "price": 4.49
+                    },
+                    {
+                        "id": 2,
+                        "img": "https://beatrice.ca/static/wp-content/uploads/updates/2pct-partly-skimmed-milk-4l-bag-on-large.png",
+                        "title": "Beatrice Paryle Skimmed milk",
+                        "productTitle": "Dairy & Eggs",
+                        "price": 5.89
+                    },
+                    {
+                        "id": 3,
+                        "img": "https://i5.walmartimages.com/asr/dca7c34b-e578-4752-b589-8b2059c472fc.01b72f13f5b71269242abf2d597dfed5.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+                        "title": "Hans.Dahi natural yogurt",
+                        "productTitle": "Dairy & Eggs",
+                        "price": 2.29
+                    },
+                    {
+                        "id": 4,
+                        "img": "https://luminateco.ca/wp-content/uploads/2022/01/Free-Run-Omega-3-1.jpg",
+                        "title": "Conestoga farms free run omega 3",
+                        "productTitle": "Dairy & Eggs",
+                        "price": 8.99
+                    },
+                    {
+                        "id": 5,
+                        "img": "https://i5.walmartimages.ca/images/Large/820/036/6000202820036.jpg",
+                        "title": "Brar.Pure desi ghee clarified",
+                        "productTitle": "Dairy & Eggs",
+                        "price": 13.99
+                    }
+                ],
+                "productTitleTwo": "Fruits & Vegetables",
+                "ProductsTwo": [
+                    {
+                        "id": 1,
+                        "img": "https://product-images.metro.ca/images/h3a/hdc/9363114197022.jpg",
+                        "title": "Italian Tomato",
+                        "productTitle": "Fruits & Vegetables",
+                        "price": 5.47
+                    },
+                    {
+                        "id": 2,
+                        "img": "https://s.cornershopapp.com/product-images/2582333.jpe?versionId=AvvLUzxLZFlYt1PuZKkcbvu2n2LurXa.",
+                        "title": "Premium Banana",
+                        "productTitle": "Fruits & Vegetables",
+                        "price": 1.3
+                    },
+                    {
+                        "id": 3,
+                        "img": "https://assets.shop.loblaws.ca/products/20067389001/b2/en/front/20067389001_front_a06_@2.png",
+                        "title": "Romaine hearts",
+                        "productTitle": "Fruits & Vegetables",
+                        "price": 3.98
+                    },
+                    {
+                        "id": 4,
+                        "img": "https://www.veggycation.com.au/siteassets/veggycationvegetable/coriander-leaves.jpg",
+                        "title": "Coriander",
+                        "productTitle": "Fruits & Vegetables",
+                        "price": 1.99
+                    },
+                    {
+                        "id": 5,
+                        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE6RKF-CiKp7f7SnRWb4ExlMPNMR8rkeE07g&usqp=CAU",
+                        "title": "English cucumbers",
+                        "productTitle": "Fruits & Vegetables",
+                        "price": 3.4
+                    }
+                ]
+            }
         },
         {
             "id": 6,
@@ -76,7 +407,55 @@
                 "time": "10-20 min"
             },
             "rating": 4.4,
-            "Selected": false
+            "Selected": false,
+            "productDetails": {
+                "productTitleOne": "Picked for you",
+                "ProductsOne": [
+                    {
+                        "id": 1,
+                        "img": "https://dqtyler.com/media/k2/items/cache/0b1ad7a7b79268a1f4558db78e092446_XL.jpg",
+                        "title": "Oreo Cookie Blizzard Treat",
+                        "description": "Oreo Cookie pieces blended with DQ creamy vanilla soft serve",
+                        "price": 5.75,
+                        "productTitle": "Diary Queen"
+                    },
+                    {
+                        "id": 2,
+                        "img": "https://fastfoodnutrition.org/item-photos/full/161335879163799.jpg",
+                        "title": "Strawberry Cheesecake Blizzard Treat",
+                        "description": "Oreo Cookie pieces blended with DQ creamy vanilla soft serve",
+                        "price": 5.75,
+                        "productTitle": "Diary Queen"
+                    }
+                ],
+                "productTitleTwo": "Blizzard Treats",
+                "ProductsTwo": [
+                    {
+                        "id": 1,
+                        "img": "https://dqtyler.com/media/k2/items/cache/af2ef6a0e2c9c528b09655df79f3b312_XL.jpg",
+                        "title": "Royal OREO Blizzard Treat",
+                        "description": "Oreo Cookie pieces blended with DQ creamy vanilla soft serve",
+                        "price": 6.83,
+                        "productTitle": "Diary Queen"
+                    },
+                    {
+                        "id": 2,
+                        "img": "https://dqtyler.com/media/k2/items/cache/0b1ad7a7b79268a1f4558db78e092446_XL.jpg",
+                        "title": "OREO Cookie Blizzard Treat",
+                        "description": "Oreo Cookie pieces blended with DQ creamy vanilla soft serve",
+                        "price": 5.75,
+                        "productTitle": "Diary Queen"
+                    },
+                    {
+                        "id": 3,
+                        "img": "https://fastfoodnutrition.org/item-photos/full/161335879163799.jpg",
+                        "title": "Strawberry Cheesecake Blizzard Treat",
+                        "description": "Oreo Cookie pieces blended with DQ creamy vanilla soft serve",
+                        "price": 5.75,
+                        "productTitle": "Diary Queen"
+                    }
+                ]
+            }
         }
     ]
 }

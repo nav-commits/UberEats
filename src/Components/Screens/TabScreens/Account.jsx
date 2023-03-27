@@ -5,11 +5,11 @@ import SelectType from '../../Atoms/SelectType/SelectType';
 
 export default function Account() {
     return (
-        <View style={{ paddingTop: 15, backgroundColor: 'white' }}>
-            <Text style={{ fontWeight: 'bold', fontSize: 20, paddingLeft: 20, paddingBottom: 5 }}>
+        <View style={{ paddingTop: 20, backgroundColor: 'white' }}>
+            <Text style={{ fontWeight: 'bold', fontSize: 28, paddingLeft: 20 }}>
                 Nav dhamrait
             </Text>
-            <View style={{ display: 'flex', flexDirection: 'row', marginBottom: 10 }}>
+            <View style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
                 <SelectType
                     Image={
                         <View
@@ -22,7 +22,7 @@ export default function Account() {
                         >
                             <Image
                                 source={require('../../../../assets/Food.png')}
-                                style={{ width: 45, height: 45 }}
+                                style={{ width: 45, height: 42 }}
                             />
                         </View>
                     }
@@ -43,11 +43,32 @@ export default function Account() {
                         >
                             <Image
                                 source={require('../../../../assets/wallet.png')}
-                                style={{ width: 45, height: 45 }}
+                                style={{ width: 45, height: 42 }}
                             />
                         </View>
                     }
                     typeItem={<Text style={styles.typeItem}>Wallet</Text>}
+                    width={100}
+                    height={40}
+                    backgroundColor={'#F0F0F0'}
+                />
+                <SelectType
+                    Image={
+                        <View
+                            style={{
+                                display: 'flex',
+                                flexDirection: 'row',
+                                justifyContent: 'center',
+                                paddingTop: 10,
+                            }}
+                        >
+                            <Image
+                                source={require('../../../../assets/wallet.png')}
+                                style={{ width: 45, height: 42 }}
+                            />
+                        </View>
+                    }
+                    typeItem={<Text style={styles.typeItem}>Orders</Text>}
                     width={100}
                     height={40}
                     backgroundColor={'#F0F0F0'}
@@ -69,6 +90,7 @@ const styles = StyleSheet.create({
     typeItem: {
         fontSize: 12,
         fontWeight: '500',
-        textAlign: 'center'
+        textAlign: 'center',
+        paddingBottom: 10
     },
 });

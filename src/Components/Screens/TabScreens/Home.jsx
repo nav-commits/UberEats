@@ -1,5 +1,5 @@
 import { View, Text, ScrollView, StyleSheet, StatusBar } from 'react-native';
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import SearchBar from '../../Atoms/SearchBar/SearchBar';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -10,12 +10,18 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import RestaurantItemsContent from '../../Organisms/RestaurantsItemsContent/RestaurantItemsContent';
 import { data } from '../../../Data/Restaurants.json';
+import { MainContext } from '../../../Context/MainContext';
 
-export default function Home() {
+export default function Home({ navigation }) {
     const [inputs, setInputs] = React.useState('');
     const [isOn, setIsOn] = useState(true);
     const [select, setSelect] = useState(data);
+    const {setItemData } = useContext(MainContext);
 
+    const findItem = (item) => {
+        let findItemInData = data.filter((restaurant) => restaurant.name === item);
+        setItemData(findItemInData);
+    };
     const toggleSwitch = () => {
         setIsOn((isOn) => !isOn);
     };
@@ -30,8 +36,13 @@ export default function Home() {
         });
         setSelect(selectedItem);
     };
+
+    const onPressHandler = (item) => {
+        findItem(item);
+        navigation.navigate('ItemDetailPage');
+    };
     return (
-        <View>
+        <View style={{ backgroundColor: '#F0F0F0' }}>
             {isOn ? (
                 <View style={{ marginBottom: 95 }}>
                     <StatusBar />
@@ -82,7 +93,11 @@ export default function Home() {
                             dividerVerticalLine={<View style={styles.dividerVerticalLineStyling} />}
                         />
                         <SelectTypeContent data={selectLabels} />
-                        <RestaurantItemsContent data={select} toggleSwitch={toggleActive} />
+                        <RestaurantItemsContent
+                            data={select}
+                            toggleSwitch={toggleActive}
+                            onPressHandler={onPressHandler}
+                        />
                     </ScrollView>
                 </View>
             ) : (
