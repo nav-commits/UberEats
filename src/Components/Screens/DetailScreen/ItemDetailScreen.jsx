@@ -4,8 +4,12 @@ import React, { useContext } from 'react';
 import ProductItemContent from '../../Organisms/ProductItemContent/ProductItemContent';
 import { allItems } from '../../../Utils/ProductItemLabels';
 import MenuItem from '../../Molecules/MenuItem/MenuItem';
+import PopupModal from '../../Molecules/Modal/Modal';
+import Icon from 'react-native-vector-icons/Ionicons';
+
 export default function ItemDetailScreen() {
     const { itemData } = useContext(MainContext);
+    const [modalVisible, setModalVisible] = React.useState(false);
 
     const findItemProductOne = itemData.map((foundItem) =>
         foundItem?.productDetails?.ProductsOne.filter((findItem) => {
@@ -22,6 +26,11 @@ export default function ItemDetailScreen() {
         })
     );
     let flatProductTwoArray = findItemProductTwo.flat();
+
+    const onPressHandler = () => {
+        setModalVisible(true);
+    };
+    console.log(modalVisible);
 
     return (
         <View>
@@ -53,7 +62,11 @@ export default function ItemDetailScreen() {
                                 </Text>
                             </View>
                         ))}
-                        <ProductItemContent data={flatArray} itemData={itemData} />
+                        <ProductItemContent
+                            data={flatArray}
+                            itemData={itemData}
+                            onPress={onPressHandler}
+                        />
                         {itemData.map((item, i) => (
                             <View key={i}>
                                 <Text style={styles.texStyle}>
@@ -61,7 +74,11 @@ export default function ItemDetailScreen() {
                                 </Text>
                             </View>
                         ))}
-                        <ProductItemContent data={flatProductTwoArray} itemData={itemData} />
+                        <ProductItemContent
+                            data={flatProductTwoArray}
+                            itemData={itemData}
+                            onPress={onPressHandler}
+                        />
                     </View>
                 ) : (
                     <View>
@@ -72,7 +89,7 @@ export default function ItemDetailScreen() {
                                 </Text>
                             </View>
                         ))}
-                        <MenuItem data={flatArray} />
+                        <MenuItem data={flatArray} onPress={onPressHandler} />
                         {itemData.map((item, i) => (
                             <View key={i}>
                                 <Text style={styles.texStyle}>
@@ -80,10 +97,24 @@ export default function ItemDetailScreen() {
                                 </Text>
                             </View>
                         ))}
-                        <MenuItem data={flatProductTwoArray} />
+                        <MenuItem data={flatProductTwoArray} onPress={onPressHandler} />
                     </View>
                 )}
             </ScrollView>
+            {/* modal is here */}
+            <PopupModal
+                modalVisible={modalVisible}
+                icon={
+                    <Icon
+                        name={'close'}
+                        size={25}
+                        style={{ paddingTop: 5 }}
+                        onPress={() => {
+                            setModalVisible(!modalVisible);
+                        }}
+                    />
+                }
+            />
         </View>
     );
 }
