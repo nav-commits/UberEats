@@ -22,9 +22,6 @@ export default function ItemDetailScreen() {
         })
     );
     let flatProductTwoArray = findItemProductTwo.flat();
-    // 1. fix json data for each list item - done
-    // 2. create component for menuitems
-    // 3. put all arrays into one for the json array and then filter for each flatlist component (refactor code)
 
     return (
         <View>
