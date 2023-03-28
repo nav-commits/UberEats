@@ -13,7 +13,7 @@ export default function MenuItem({ data, onPress }) {
 
                         padding: 10
                     }}
-                    onPress={onPress}
+                    onPress={() => onPress(item.id,item.title)}
                 >
                     <View>
                         <Text style={styles.textStyle}>{item.title}</Text>

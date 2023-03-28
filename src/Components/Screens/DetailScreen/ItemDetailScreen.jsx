@@ -1,6 +1,6 @@
 import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
 import { MainContext } from '../../../Context/MainContext';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import ProductItemContent from '../../Organisms/ProductItemContent/ProductItemContent';
 import { allItems } from '../../../Utils/ProductItemLabels';
 import MenuItem from '../../Molecules/MenuItem/MenuItem';
@@ -8,7 +8,7 @@ import PopupModal from '../../Molecules/Modal/Modal';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function ItemDetailScreen() {
-    const { itemData } = useContext(MainContext);
+    const { itemData, setFoundItem, foundItem } = useContext(MainContext);
     const [modalVisible, setModalVisible] = React.useState(false);
 
     const findItemProductOne = itemData.map((foundItem) =>
@@ -27,11 +27,25 @@ export default function ItemDetailScreen() {
     );
     let flatProductTwoArray = findItemProductTwo.flat();
 
-    const onPressHandler = () => {
+    const findItem = (id, title) => {
+        const foundProductItem = itemData.map((item) => {
+            const productOne = item?.productDetails?.ProductsOne.find((findItem) => findItem.id === id && findItem.title === title)
+            const productTwo = item?.productDetails?.ProductsTwo.find((findItem) =>  findItem.id === id && findItem.title === title);
+            if (productOne !== undefined) {
+                return productOne;
+            } else if (productTwo) {
+                return productTwo;
+            }
+        });
+        setFoundItem(foundProductItem);
+    };
+    const onPressHandler = (id,title) => {
+        findItem(id,title)
         setModalVisible(true);
     };
-    console.log(modalVisible);
-
+      // create a function for a button to add these to a cart page
+    console.log(foundItem);
+    
     return (
         <View>
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -104,6 +118,7 @@ export default function ItemDetailScreen() {
             {/* modal is here */}
             <PopupModal
                 modalVisible={modalVisible}
+                // pass the data of the selected item
                 icon={
                     <Icon
                         name={'close'}
@@ -114,6 +129,7 @@ export default function ItemDetailScreen() {
                         }}
                     />
                 }
+                button={<Text>hello</Text>}
             />
         </View>
     );
