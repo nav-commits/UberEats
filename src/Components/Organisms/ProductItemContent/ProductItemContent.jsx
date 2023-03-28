@@ -25,7 +25,17 @@ export default function ProductItemContent({ data, onPress }) {
                     return (
                         <TouchableOpacity onPress={() => onPress(item.id, item.title)}>
                             <View style={styles.listStyle}>
-                                <Button icon={<Entypo name={'plus'} size={12} color={'white'} />} />
+                                <Button
+                                    icon={<Entypo name={'plus'} size={12} color={'white'} />}
+                                    backgroundColor={'black'}
+                                    borderRadius={40}
+                                    height={28}
+                                    width={28}
+                                    position='relative'
+                                    top={30}
+                                    left={82}
+                                    zIndex={100}
+                                />
                                 <View style={{ width: 120 }}>
                                     <View style={{ backgroundColor: '#F0F0F0', padding: 10 }}>
                                         <Image

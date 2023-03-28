@@ -6,6 +6,7 @@ import { allItems } from '../../../Utils/ProductItemLabels';
 import MenuItem from '../../Molecules/MenuItem/MenuItem';
 import PopupModal from '../../Molecules/Modal/Modal';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Button from '../../Atoms/Button/Button';
 
 export default function ItemDetailScreen() {
     const { itemData, setFoundItem, foundItem } = useContext(MainContext);
@@ -29,8 +30,12 @@ export default function ItemDetailScreen() {
 
     const findItem = (id, title) => {
         const foundProductItem = itemData.map((item) => {
-            const productOne = item?.productDetails?.ProductsOne.find((findItem) => findItem.id === id && findItem.title === title)
-            const productTwo = item?.productDetails?.ProductsTwo.find((findItem) =>  findItem.id === id && findItem.title === title);
+            const productOne = item?.productDetails?.ProductsOne.find(
+                (findItem) => findItem.id === id && findItem.title === title
+            );
+            const productTwo = item?.productDetails?.ProductsTwo.find(
+                (findItem) => findItem.id === id && findItem.title === title
+            );
             if (productOne !== undefined) {
                 return productOne;
             } else if (productTwo) {
@@ -39,13 +44,13 @@ export default function ItemDetailScreen() {
         });
         setFoundItem(foundProductItem);
     };
-    const onPressHandler = (id,title) => {
-        findItem(id,title)
+    const onPressHandler = (id, title) => {
+        findItem(id, title);
         setModalVisible(true);
     };
-      // create a function for a button to add these to a cart page
+    // create a function for a button to add these to a cart page
     console.log(foundItem);
-    
+
     return (
         <View>
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -115,21 +120,28 @@ export default function ItemDetailScreen() {
                     </View>
                 )}
             </ScrollView>
-            {/* modal is here */}
             <PopupModal
                 modalVisible={modalVisible}
-                // pass the data of the selected item
                 icon={
                     <Icon
-                        name={'close'}
+                        name={'arrow-back'}
                         size={25}
-                        style={{ paddingTop: 5 }}
                         onPress={() => {
                             setModalVisible(!modalVisible);
                         }}
                     />
                 }
-                button={<Text>hello</Text>}
+                button={
+                    <Button
+                        backgroundColor={'black'}
+                        color='white'
+                        borderRadius={2}
+                        margin={15}
+                        padding={15}
+                        title='Add to cart'
+                    />
+                }
+                data={foundItem}
             />
         </View>
     );

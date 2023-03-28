@@ -1,12 +1,33 @@
-import { View, Modal, Text, StyleSheet } from 'react-native';
-import Button from '../../Atoms/Button/Button';
-import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
-export default function PopupModal({ modalVisible, icon}) {
+import { View, Modal, Text, StyleSheet, Image } from 'react-native';
+export default function PopupModal({ modalVisible, icon, button, data }) {
     return (
         <Modal animationType='slide' transparent={true} visible={modalVisible}>
             <View style={styles.modalView}>
-                <Text style={{margin: 40}}>data goes here</Text>
-                <View>{icon}</View>
+                {data.map((item, i) => (
+                    <View key={i}>
+                        <View
+                            style={{
+                                backgroundColor: '#F8F8F8',
+                                height: 200,
+                                display: 'flex',
+                                flexDirection: 'row',
+                                justifyContent: 'center',
+                            }}
+                        >
+                            <Image
+                                source={{
+                                    uri: item.img,
+                                }}
+                                style={{ width: 180, height: 150, marginTop: 30 }}
+                            />
+                        </View>
+                        <View style={styles.iconStyle}>{icon}</View>
+                        <Text style={styles.textStyle}>{item.title}</Text>
+                        <Text style={styles.price}>$ {item.price}</Text>
+                        
+                    </View>
+                ))}
+                {button}
             </View>
         </Modal>
     );
@@ -22,58 +43,25 @@ const styles = StyleSheet.create({
     textStyle: {
         color: 'hsl(240, 25%, 25%)',
         fontWeight: 'bold',
-        marginTop: 50,
-        padding: 10,
-        fontSize: 17,
-    },
-    modalText: {
-        paddingTop: 30,
+        paddingLeft: 10,
         fontSize: 20,
-        fontWeight: 'bold',
-        paddingBottom: 10,
     },
-    contentStyle: {
-        color: 'hsl(240, 25%, 25%)',
-        marginTop: 10,
-        paddingLeft: 20,
-        paddingRight: 10,
-    },
-    contentTitleStyle: {
+    price: {
         color: 'hsl(240, 25%, 25%)',
         fontWeight: 'bold',
-        paddingLeft: 15,
-        paddingTop: 12,
-        fontSize: 15,
+        fontSize: 14,
+        paddingLeft: 10,
     },
-    innerContainer: {
-        borderRadius: 20,
-        elevation: 2,
+    iconStyle: {
         backgroundColor: 'white',
-        shadowColor: 0.5,
-        shadowOpacity: 0.3,
-        shadowRadius: 2,
-        width: 45,
-        marginBottom: 5,
-        height: 40,
-        paddingTop: 12,
-        position: 'absolute',
-        top: 50,
-        right: 20,
-        zIndex: 2,
-    },
-    img: {
-        flexDirection: 'row',
+        borderRadius: 20,
+        height: 35,
+        width: 35,
+        position: 'relative',
+        bottom: 160,
+        zIndex: 200,
+        left: 10,
         justifyContent: 'center',
-    },
-    contentContainer: {
-        height: 120,
-        backgroundColor: '#CAE1F9',
-        borderBottomRightRadius: 7,
-        borderBottomLeftRadius: 7,
-    },
-    imgDirection: {
-        position: 'absolute',
-        top: 8,
-        right: 20,
+        padding: 5,
     },
 });

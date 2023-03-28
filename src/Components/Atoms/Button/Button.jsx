@@ -1,30 +1,53 @@
-import { View } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
 
-export default function Button({ icon }) {
+export default function Button({
+    icon,
+    backgroundColor,
+    borderRadius,
+    height,
+    width,
+    position,
+    top,
+    left,
+    zIndex,
+    title,
+    color,
+    margin,
+    padding,
+}) {
     return (
-        <View
+        <TouchableOpacity
             style={{
-                backgroundColor: 'black',
-                borderRadius: 40,
-                width: 28,
-                height: 28,
-                position: 'relative',
-                top: 30,
-                left: 82,
-                zIndex: 100,
+                backgroundColor: backgroundColor,
+                borderRadius: borderRadius,
+                width: height,
+                height: width,
+                position: position,
+                top: top,
+                left: left,
+                zIndex: zIndex,
+                margin: margin,
+                padding: padding,
             }}
         >
-            <View
-                style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    flexDirection: 'row',
-                    top: 10,
-                }}
-            >
-                {icon}
-            </View>
-        </View>
+            {title && (
+                <Text style={{ color: color, textAlign: 'center', fontWeight: 'bold' }}>
+                    {title}
+                </Text>
+            )}
+            {icon && (
+                <View
+                    style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        flexDirection: 'row',
+                        top: 10,
+                    }}
+                >
+                    {icon}
+                </View>
+            )}
+        </TouchableOpacity>
     );
 }
