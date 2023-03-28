@@ -24,7 +24,6 @@ export default function App() {
                         component={BottomNavigation}
                     />
                     <Stack.Screen
-                        // options={{ headerShown: false }}
                         name='ItemDetailPage'
                         component={ItemDetailScreen}
                     />

@@ -1,11 +1,16 @@
 import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
 import { MainContext } from '../../../Context/MainContext';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import ProductItemContent from '../../Organisms/ProductItemContent/ProductItemContent';
 import { allItems } from '../../../Utils/ProductItemLabels';
 import MenuItem from '../../Molecules/MenuItem/MenuItem';
+import PopupModal from '../../Molecules/Modal/PopupModal';
+import Icon from 'react-native-vector-icons/Ionicons';
+
+
 export default function ItemDetailScreen() {
-    const { itemData } = useContext(MainContext);
+    const { itemData, setFoundItem, foundItem, cart, setCart } = useContext(MainContext);
+    const [modalVisible, setModalVisible] = React.useState(false);
 
     const findItemProductOne = itemData.map((foundItem) =>
         foundItem?.productDetails?.ProductsOne.filter((findItem) => {
@@ -22,6 +27,35 @@ export default function ItemDetailScreen() {
         })
     );
     let flatProductTwoArray = findItemProductTwo.flat();
+
+    const findItem = (id, title) => {
+        const foundProductItem = itemData.map((item) => {
+            const productOne = item?.productDetails?.ProductsOne.find(
+                (findItem) => findItem.id === id && findItem.title === title
+            );
+            const productTwo = item?.productDetails?.ProductsTwo.find(
+                (findItem) => findItem.id === id && findItem.title === title
+            );
+            if (productOne !== undefined) {
+                return productOne;
+            } else if (productTwo) {
+                return productTwo;
+            }
+        });
+        setFoundItem(foundProductItem);
+    };
+    const onPressHandler = (id, title) => {
+        findItem(id, title);
+        setModalVisible(true);
+    };
+    const addToCart = (item) => {
+        setCart([...cart, item])
+        setModalVisible(false);
+    }
+    // const removeToCartItem = (item) => {
+    //     setCart([...cart, item])
+    //     setModalVisible(false);
+    // }
 
     return (
         <View>
@@ -53,7 +87,11 @@ export default function ItemDetailScreen() {
                                 </Text>
                             </View>
                         ))}
-                        <ProductItemContent data={flatArray} itemData={itemData} />
+                        <ProductItemContent
+                            data={flatArray}
+                            itemData={itemData}
+                            onPress={onPressHandler}
+                        />
                         {itemData.map((item, i) => (
                             <View key={i}>
                                 <Text style={styles.texStyle}>
@@ -61,7 +99,11 @@ export default function ItemDetailScreen() {
                                 </Text>
                             </View>
                         ))}
-                        <ProductItemContent data={flatProductTwoArray} itemData={itemData} />
+                        <ProductItemContent
+                            data={flatProductTwoArray}
+                            itemData={itemData}
+                            onPress={onPressHandler}
+                        />
                     </View>
                 ) : (
                     <View>
@@ -72,7 +114,7 @@ export default function ItemDetailScreen() {
                                 </Text>
                             </View>
                         ))}
-                        <MenuItem data={flatArray} />
+                        <MenuItem data={flatArray} onPress={onPressHandler} />
                         {itemData.map((item, i) => (
                             <View key={i}>
                                 <Text style={styles.texStyle}>
@@ -80,10 +122,25 @@ export default function ItemDetailScreen() {
                                 </Text>
                             </View>
                         ))}
-                        <MenuItem data={flatProductTwoArray} />
+                        <MenuItem data={flatProductTwoArray} onPress={onPressHandler} />
                     </View>
                 )}
             </ScrollView>
+            <PopupModal
+                modalVisible={modalVisible}
+                icon={
+                    <Icon
+                        name={'arrow-back'}
+                        size={25}
+                        onPress={() => {
+                            setModalVisible(!modalVisible);
+                        }}
+                    />
+                }
+                addToCart={addToCart}
+                data={foundItem}
+                cartLength = {cart.length}
+            />
         </View>
     );
 }

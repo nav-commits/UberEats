@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
-export default function MenuItem({ data }) {
+export default function MenuItem({ data, onPress }) {
     return (
         <View>
             {data.map((item, i) => (
@@ -13,6 +13,7 @@ export default function MenuItem({ data }) {
 
                         padding: 10
                     }}
+                    onPress={() => onPress(item.id,item.title)}
                 >
                     <View>
                         <Text style={styles.textStyle}>{item.title}</Text>
