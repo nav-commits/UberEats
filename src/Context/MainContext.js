@@ -5,7 +5,8 @@ export const MainContext = createContext();
 
 function MainContextProvider(props) {
     const [itemData, setItemData] = useState([]);
-     const [foundItem, setFoundItem] = useState([]);
+    const [foundItem, setFoundItem] = useState([]);
+    const [cart, setCart] = useState([]);
     return (
         <MainContext.Provider
             value={{
@@ -13,6 +14,8 @@ function MainContextProvider(props) {
                 setItemData,
                 foundItem,
                 setFoundItem,
+                cart,
+                setCart,
             }}
         >
             {props.children}

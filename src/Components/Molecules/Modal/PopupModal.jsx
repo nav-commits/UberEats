@@ -1,5 +1,6 @@
 import { View, Modal, Text, StyleSheet, Image } from 'react-native';
-export default function PopupModal({ modalVisible, icon, button, data }) {
+import Button from '../../Atoms/Button/Button';
+export default function PopupModal({ modalVisible, icon, data, addToCart, cartLength }) {
     return (
         <Modal animationType='slide' transparent={true} visible={modalVisible}>
             <View style={styles.modalView}>
@@ -24,10 +25,19 @@ export default function PopupModal({ modalVisible, icon, button, data }) {
                         <View style={styles.iconStyle}>{icon}</View>
                         <Text style={styles.textStyle}>{item.title}</Text>
                         <Text style={styles.price}>$ {item.price}</Text>
-                        
+                        <Button
+                            backgroundColor={'black'}
+                            color='white'
+                            borderRadius={2}
+                            margin={15}
+                            padding={15}
+                            title={`Add to cart ${cartLength}`}
+                            onPress={() => {
+                                addToCart(item);
+                            }}
+                        />
                     </View>
                 ))}
-                {button}
             </View>
         </Modal>
     );

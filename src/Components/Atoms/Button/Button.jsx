@@ -15,6 +15,7 @@ export default function Button({
     color,
     margin,
     padding,
+    onPress
 }) {
     return (
         <TouchableOpacity
@@ -30,6 +31,7 @@ export default function Button({
                 margin: margin,
                 padding: padding,
             }}
+            onPress={onPress}
         >
             {title && (
                 <Text style={{ color: color, textAlign: 'center', fontWeight: 'bold' }}>

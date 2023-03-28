@@ -4,12 +4,12 @@ import React, { useContext, useEffect } from 'react';
 import ProductItemContent from '../../Organisms/ProductItemContent/ProductItemContent';
 import { allItems } from '../../../Utils/ProductItemLabels';
 import MenuItem from '../../Molecules/MenuItem/MenuItem';
-import PopupModal from '../../Molecules/Modal/Modal';
+import PopupModal from '../../Molecules/Modal/PopupModal';
 import Icon from 'react-native-vector-icons/Ionicons';
-import Button from '../../Atoms/Button/Button';
+
 
 export default function ItemDetailScreen() {
-    const { itemData, setFoundItem, foundItem } = useContext(MainContext);
+    const { itemData, setFoundItem, foundItem, cart, setCart } = useContext(MainContext);
     const [modalVisible, setModalVisible] = React.useState(false);
 
     const findItemProductOne = itemData.map((foundItem) =>
@@ -48,8 +48,14 @@ export default function ItemDetailScreen() {
         findItem(id, title);
         setModalVisible(true);
     };
-    // create a function for a button to add these to a cart page
-    console.log(foundItem);
+    const addToCart = (item) => {
+        setCart([...cart, item])
+        setModalVisible(false);
+    }
+    // const removeToCartItem = (item) => {
+    //     setCart([...cart, item])
+    //     setModalVisible(false);
+    // }
 
     return (
         <View>
@@ -131,17 +137,9 @@ export default function ItemDetailScreen() {
                         }}
                     />
                 }
-                button={
-                    <Button
-                        backgroundColor={'black'}
-                        color='white'
-                        borderRadius={2}
-                        margin={15}
-                        padding={15}
-                        title='Add to cart'
-                    />
-                }
+                addToCart={addToCart}
                 data={foundItem}
+                cartLength = {cart.length}
             />
         </View>
     );
