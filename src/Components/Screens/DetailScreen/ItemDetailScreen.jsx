@@ -52,6 +52,9 @@ export default function ItemDetailScreen() {
         setCart([...cart, item])
         setModalVisible(false);
     }
+    console.log(cart.length)
+    console.log(cart)
+    
     // const removeToCartItem = (item) => {
     //     setCart([...cart, item])
     //     setModalVisible(false);

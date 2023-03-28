@@ -9,7 +9,35 @@ export default function Baskets() {
     return (
         <View style={styles.scene}>
             {cart.length > 0 ? (
-                <Text>items</Text>
+                <View>
+                    {cart.map((item, i) => (
+                        <View key={i}>
+                            {/* make this menuitem component */}
+                            <View
+                                style={{
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignContent: 'space-around',
+                                    gap: 10,
+                                    margin: 10
+                                }}
+                            >
+                                <Image
+                                    source={{
+                                        uri: item.img,
+                                    }}
+                                    style={{ width: 60, height: 70 }}
+                                />
+                                <View>
+                                    <Text style={styles.textStyle}>{item.title}</Text>
+                                    <Text style={styles.price}>$ {item.price}</Text>
+                                    <Text style={{ paddingLeft: 10, color: 'grey', fontSize: 12 }}>Deliver to{item.deliverAddress}</Text>
+                                    {/* delete function and icon */}
+                                </View>
+                            </View>
+                        </View>
+                    ))}
+                </View>
             ) : (
                 <View>
                     <Text style={{ padding: 10, fontSize: 25, fontWeight: 'bold' }}>Carts</Text>
@@ -52,5 +80,17 @@ const styles = StyleSheet.create({
     scene: {
         backgroundColor: 'white',
         marginTop: 10,
+    },
+    textStyle: {
+        color: 'hsl(240, 25%, 25%)',
+        fontWeight: 'bold',
+        paddingLeft: 10,
+        fontSize: 15,
+    },
+    price: {
+        color: 'hsl(240, 25%, 25%)',
+        fontWeight: 'bold',
+        fontSize: 14,
+        paddingLeft: 10,
     },
 });
