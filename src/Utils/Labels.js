@@ -54,3 +54,34 @@ export const selectLabels = [
         height: 25,
     },
 ];
+
+
+export const selectAccountLabels = [
+    {
+        id: 1,
+        labelBottom: 'Favourites',
+        image: require('../../assets/Food.png'),
+        width: 100,
+        justifyContent: 'center',
+        widthImage: 45,
+        height: 42,
+    },
+    {
+        id: 2,
+        labelBottom: 'Wallet',
+        image: require('../../assets/wallet.png'),
+        width: 100,
+        justifyContent: 'center',
+        widthImage: 45,
+        height: 42,
+    },
+    {
+        id: 3,
+        labelBottom: 'Orders',
+        image: require('../../assets/foodOrder.png'),
+        width: 100,
+        justifyContent: 'center',
+        widthImage: 45,
+        height: 42,
+    },
+];
