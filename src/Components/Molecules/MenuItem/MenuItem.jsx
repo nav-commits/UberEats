@@ -10,7 +10,6 @@ export default function MenuItem({ data, onPress }) {
                         justifyContent: 'space-between',
                         flexDirection: 'row',
                         alignItems: 'center',
-
                         padding: 10
                     }}
                     onPress={() => onPress(item.id,item.title)}

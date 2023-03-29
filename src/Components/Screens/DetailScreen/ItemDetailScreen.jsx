@@ -52,14 +52,6 @@ export default function ItemDetailScreen() {
         setCart([...cart, item])
         setModalVisible(false);
     }
-    console.log(cart.length)
-    console.log(cart)
-    
-    // const removeToCartItem = (item) => {
-    //     setCart([...cart, item])
-    //     setModalVisible(false);
-    // }
-
     return (
         <View>
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -80,7 +72,6 @@ export default function ItemDetailScreen() {
                         </Text>
                     </View>
                 ))}
-
                 {itemData.some((item) => item?.productItem === 'productItem') ? (
                     <View>
                         {itemData.map((item, i) => (
