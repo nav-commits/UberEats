@@ -1,11 +1,11 @@
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text} from 'react-native';
 
 
-export default function Browse({navigation}) {
+export default function Browse() {
 
     return (
-        <View style={{ padding: 40 }}>
-           <Text>Catagories</Text>
+        <View >
+            <Text style={{ fontWeight: 'bold', fontSize: 25, padding: 10 }}>Catagories</Text>
         </View>
     );
 }

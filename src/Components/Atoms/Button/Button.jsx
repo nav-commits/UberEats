@@ -44,7 +44,7 @@ export default function Button({
                         display: 'flex',
                         justifyContent: 'center',
                         flexDirection: 'row',
-                        top: 10,
+                        top: 8,
                     }}
                 >
                     {icon}

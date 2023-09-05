@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import BottomNavigation from './src/Components/Organisms/BottomNavigation/BottomNavigation';
 import ItemDetailScreen from './src/Components/Screens/DetailScreen/ItemDetailScreen';
 import MainContextProvider from './src/Context/MainContext';
+import BackButtonHeader from './src/Components/Atoms/ BackButtonHeader/ BackButtonHeader';
 
 const MyTheme = {
     ...DefaultTheme,
@@ -26,6 +27,11 @@ export default function App() {
                     <Stack.Screen
                         name='ItemDetailPage'
                         component={ItemDetailScreen}
+                        options={{
+                            header: ({ navigation }) => (
+                                <BackButtonHeader navigation={navigation} />
+                            ),
+                        }}
                     />
                 </Stack.Navigator>
             </NavigationContainer>

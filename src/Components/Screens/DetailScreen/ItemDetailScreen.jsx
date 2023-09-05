@@ -53,7 +53,7 @@ export default function ItemDetailScreen() {
         setModalVisible(false);
     }
     return (
-        <View>
+        <View style={{margin:'10px'}}>
             <ScrollView showsVerticalScrollIndicator={false}>
                 {itemData.map((item, i) => (
                     <View key={i}>
