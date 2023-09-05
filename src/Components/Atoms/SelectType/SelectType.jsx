@@ -9,7 +9,8 @@ export default function SelectType({ typeItem, Image, bottomText, width, backgro
                     backgroundColor: backgroundColor,
                     width: width,
                     borderRadius: 10,
-                    marginLeft: 20
+                    marginLeft: 20,
+                    marginBottom:10
                 }}
             >
                 {Image}

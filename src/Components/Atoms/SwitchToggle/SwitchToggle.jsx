@@ -1,9 +1,5 @@
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
-import Feather from 'react-native-vector-icons/Feather';
-import Entypo from 'react-native-vector-icons/Entypo';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default function SwitchToggle({ isOn, toggleSwitch, icons }) {
     return (
