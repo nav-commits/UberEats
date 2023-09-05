@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-around',
-        gap: 180,
+        gap: 150,
         backgroundColor: 'white',
     },
     searchIconStyling: {

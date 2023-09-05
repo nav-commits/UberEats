@@ -7,7 +7,7 @@ export default function SwitchToggle({ isOn, toggleSwitch, icons }) {
             {icons}
             <TouchableOpacity
                 style={[
-                    styles.outter,
+                    styles.outer,
                     isOn ? { justifyContent: 'flex-start' } : { justifyContent: 'flex-end' },
                 ]}
                 activeOpacity={1}
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.15,
         shadowRadius: 5,
     },
-    outter: {
+    outer: {
         width: 80,
         height: 30,
         backgroundColor: '#F0F0F0',
