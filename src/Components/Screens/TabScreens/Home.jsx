@@ -71,7 +71,7 @@ export default function Home({ navigation }) {
                             }
                         />
                     </View>
-                    <ScrollView showsVerticalScrollIndicator={false} stickyHeaderIndices={[0]}>
+                    <ScrollView style={{height: '750px'}}  showsVerticalScrollIndicator={false} stickyHeaderIndices={[0]}>
                         <SearchBar
                             onChangeText={(newText) => setInputs(newText)}
                             value={inputs}
