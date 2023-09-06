@@ -14,7 +14,7 @@ export default function Baskets() {
     };
     return (
         <View style={styles.scene}>
-            <Text style={{ padding: 10, fontSize: 25, fontWeight: 'bold' }}>Carts</Text>
+            <Text style={{ fontWeight: 'bold', fontSize: 25, padding: 10 }}>Carts</Text>
             {cart.length > 0 ? (
                 <View>
                     {cart.map((item, i) => (

@@ -14,9 +14,9 @@ import { MainContext } from '../../../Context/MainContext';
 
 export default function Home({ navigation }) {
     const [inputs, setInputs] = React.useState('');
-    const [isOn, setIsOn] = useState(true);
+    const [isOn, setIsOn] = useState(false);
     const [select, setSelect] = useState(data);
-    const {setItemData } = useContext(MainContext);
+    const { setItemData } = useContext(MainContext);
 
     const findItem = (item) => {
         let findItemInData = data.filter((restaurant) => restaurant.name === item);
@@ -44,64 +44,8 @@ export default function Home({ navigation }) {
     return (
         <View style={{ backgroundColor: '#F0F0F0' }}>
             {isOn ? (
-                <View style={{ marginBottom: 95 }}>
-                    <StatusBar />
-                    <View style={styles.textContainer}>
-                        <View style={{ padding: 10 }}>
-                            <Text style={styles.deliverAddress}>Deliver now</Text>
-                            <Text style={styles.streetAddressStyle}>123 Oak Street</Text>
-                        </View>
-
-                        <SwitchToggle
-                            isOn={isOn}
-                            toggleSwitch={toggleSwitch}
-                            icons={
-                                <View style={styles.iconContainer}>
-                                    <MaterialCommunityIcons
-                                        name={isOn ? 'shopping' : 'shopping-outline'}
-                                        size={13}
-                                        color={isOn ? 'white' : 'black'}
-                                    />
-                                    <FontAwesome5
-                                        name='walking'
-                                        size={13}
-                                        color={isOn ? 'black' : 'white'}
-                                    />
-                                </View>
-                            }
-                        />
-                    </View>
-                    <ScrollView style={{height: '750px'}}  showsVerticalScrollIndicator={false} stickyHeaderIndices={[0]}>
-                        <SearchBar
-                            onChangeText={(newText) => setInputs(newText)}
-                            value={inputs}
-                            placeHolder='Food, groceries, drinks, etc'
-                            searchIcon={
-                                <View style={styles.searchIconStyling}>
-                                    <FontAwesome
-                                        name='search'
-                                        size={16}
-                                        color='hsl(240, 25%, 25%)'
-                                    />
-                                </View>
-                            }
-                            filterIcon={
-                                <View style={styles.filterIconStyling}>
-                                    <Ionicons name='filter' size={16} color='black' />
-                                </View>
-                            }
-                            dividerVerticalLine={<View style={styles.dividerVerticalLineStyling} />}
-                        />
-                        <SelectTypeContent data={selectLabels} />
-                        <RestaurantItemsContent
-                            data={select}
-                            toggleSwitch={toggleActive}
-                            onPressHandler={onPressHandler}
-                        />
-                    </ScrollView>
-                </View>
-            ) : (
-                <View style={styles.textContainer}>
+                
+                 <View style={styles.textContainer}>
                     <View style={{ padding: 10 }}>
                         <Text style={styles.deliverAddress}>PickUp Now</Text>
                         <Text style={styles.streetAddressStyle}>Near 123 Oak Street</Text>
@@ -126,6 +70,55 @@ export default function Home({ navigation }) {
                         }
                     />
                 </View>
+            ) : (
+                    <View style={{ marginBottom: 95 }}>
+                        <StatusBar />
+                        <View style={styles.textContainer}>
+                            <View style={{ padding: 10 }}>
+                                <Text style={styles.deliverAddress}>Deliver now</Text>
+                                <Text style={styles.streetAddressStyle}>123 Oak Street</Text>
+                            </View>
+
+                            <SwitchToggle
+                                isOn={isOn}
+                                toggleSwitch={toggleSwitch}
+                            />
+                        </View>
+                        <ScrollView
+                            style={{ height: '750px' }}
+                            showsVerticalScrollIndicator={false}
+                            stickyHeaderIndices={[0]}
+                        >
+                            <SearchBar
+                                onChangeText={(newText) => setInputs(newText)}
+                                value={inputs}
+                                placeHolder='Food, groceries, drinks, etc'
+                                searchIcon={
+                                    <View style={styles.searchIconStyling}>
+                                        <FontAwesome
+                                            name='search'
+                                            size={16}
+                                            color='hsl(240, 25%, 25%)'
+                                        />
+                                    </View>
+                                }
+                                filterIcon={
+                                    <View style={styles.filterIconStyling}>
+                                        <Ionicons name='filter' size={16} color='black' />
+                                    </View>
+                                }
+                                dividerVerticalLine={<View style={styles.dividerVerticalLineStyling} />}
+                            />
+                            <SelectTypeContent data={selectLabels} />
+                            <RestaurantItemsContent
+                                data={select}
+                                toggleSwitch={toggleActive}
+                                onPressHandler={onPressHandler}
+                            />
+                        </ScrollView>
+                    </View>
+
+               
             )}
         </View>
     );

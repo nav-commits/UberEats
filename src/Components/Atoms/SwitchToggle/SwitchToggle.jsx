@@ -1,51 +1,57 @@
-import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
-import React, { useState } from 'react';
+import React from 'react';
+import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
-export default function SwitchToggle({ isOn, toggleSwitch, icons }) {
+export default function SwitchToggle({ isOn, toggleSwitch }) {
     return (
-        <View style={styles.container}>
-            {icons}
-            <TouchableOpacity
-                style={[
-                    styles.outer,
-                    isOn ? { justifyContent: 'flex-start' } : { justifyContent: 'flex-end' },
-                ]}
-                activeOpacity={1}
-                onPress={toggleSwitch}
-            >
-                <View
-                    style={[
-                        styles.inner,
-                        isOn ? { backgroundColor: 'black' } : { backgroundColor: 'black' },
-                    ]}
+        <TouchableOpacity onPress={toggleSwitch}>
+            <View style={[styles.container, isOn ? styles.onContainer : styles.offContainer]}>
+                <View style={[styles.thumb, isOn ? styles.onThumb : styles.offThumb]} />
+                <MaterialCommunityIcons
+                    name={isOn ? 'shopping' : 'shopping-outline'}
+                    size={13}
+                    color={isOn ? 'black' : 'white'}
+                    style={{ position: 'relative', right: '30px', zIndex: 1000 }}
                 />
-            </TouchableOpacity>
-        </View>
+                <FontAwesome5
+                    name='walking'
+                    size={13}
+                    color={isOn ? 'white' : 'black'}
+                    style={{ position: 'relative', zIndex: 1000,left: '5px' }}
+                />
+            </View>
+        </TouchableOpacity>
     );
 }
 
 const styles = StyleSheet.create({
-    inner: {
-        width: 42,
-        height: 28,
-        backgroundColor: 'white',
-        borderRadius: 15,
-        shadowOffset: { width: 0, height: 0 },
-        shadowOpacity: 0.15,
-        shadowRadius: 5,
-    },
-    outer: {
-        width: 80,
-        height: 30,
-        backgroundColor: '#F0F0F0',
-        borderRadius: 15,
-        alignItems: 'center',
-        flexDirection: 'row',
-        paddingHorizontal: 2,
-    },
     container: {
-        flex: 1,
-        justifyContent: 'center',
+        width: 75,
+        height: 32,
+        borderRadius: 20,
+        flexDirection: 'row',
         alignItems: 'center',
+        paddingHorizontal: 4,
+        marginTop: 10,
+    },
+    onContainer: {
+        backgroundColor: 'rgb(240, 240, 240)',
+    },
+    offContainer: {
+        backgroundColor: 'rgb(240, 240, 240)',
+    },
+    thumb: {
+        width: 35,
+        height: 30,
+        borderRadius: 25,
+        backgroundColor: 'black',
+        padding: 0,
+    },
+    onThumb: {
+        transform: [{ translateX: 40 }],
+    },
+    offThumb: {
+        transform: [{ translateX: -3 }],
     },
 });
